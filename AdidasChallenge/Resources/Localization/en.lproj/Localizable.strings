@@ -1,0 +1,10 @@
+/*
+  Localizable+Extension.swift
+ 
+  AdidasChallenge
+  Created by Jesse Klijn on 04/05/2021.
+ */
+
+"error_row_cta" = "Retry";
+"search_no_result_title" = "We could not find '%@'.";
+"search_no_result_description" = "We search for titles and descriptions.";
