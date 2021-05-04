@@ -1,0 +1,6 @@
+framework module Pods_AdidasChallengeTests {
+  umbrella header "Pods-AdidasChallengeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

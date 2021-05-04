@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012501982FB1825DFEFD3456911C26FC /* Pods-AdidasChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5313F2C5FEEFE106BE2BB4FD19605043 /* Pods-AdidasChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071B54FD1B186D6144C0D7EC0066065C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		233E2D0C5C551F52F39C4C1D54012CBA /* Pods-AdidasChallenge-AdidasChallengeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A0B57E229821C9B47E2B017BD5FEF3 /* Pods-AdidasChallenge-AdidasChallengeUITests-dummy.m */; };
+		7CC7BD722C029743A81AB9D0DE480A24 /* Pods-AdidasChallengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A16F37FBEBFEC0DD5DB43E7C9137F257 /* Pods-AdidasChallengeTests-dummy.m */; };
+		94A18764E3C2C565CDC24966791C7B33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9EAD0C4019E695A0B86B7281A87981F3 /* Pods-AdidasChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C3A1E2512461C28C2E8BAFA38884 /* Pods-AdidasChallenge-dummy.m */; };
+		A095A3C7EC61A16E824806B811E7530C /* Pods-AdidasChallenge-AdidasChallengeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3510E815D66D948284B3B8BF64AB3766 /* Pods-AdidasChallenge-AdidasChallengeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E51ACF90D49DB294213959363127E084 /* Pods-AdidasChallengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A76417D0976AE52F211EB4DE658F1368 /* Pods-AdidasChallengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1C258C6C1F646FC0C081B1A3D7AE6FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		736658602E2CA40FCB04B96A9218DA76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7390695731AB2637D4F2847D5F67EDA;
+			remoteInfo = "Pods-AdidasChallenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18465B154524791672A0A717DCDB2935 /* Pods-AdidasChallengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AdidasChallengeTests.modulemap"; sourceTree = "<group>"; };
+		29DC154D4F49DF3BBF6DAAB55618FE32 /* Pods_AdidasChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdidasChallengeTests.framework; path = "Pods-AdidasChallengeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B049CD5BBAB5BB2BF7D10CCB3930627 /* Pods-AdidasChallenge-AdidasChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasChallenge-AdidasChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2CCF0EDC604048D38C719CC3DB6E4A45 /* Pods-AdidasChallengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdidasChallengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3372F14D2C56D3DED91DD6EC91FB2BEB /* Pods-AdidasChallengeTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasChallengeTests-Info.plist"; sourceTree = "<group>"; };
+		3510E815D66D948284B3B8BF64AB3766 /* Pods-AdidasChallenge-AdidasChallengeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdidasChallenge-AdidasChallengeUITests-umbrella.h"; sourceTree = "<group>"; };
+		35340705837B4905E0AFC3A88924CF3C /* Pods-AdidasChallenge-AdidasChallengeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasChallenge-AdidasChallengeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		396CDC7C931E11CC01C0F7ACD046C124 /* Pods_AdidasChallenge_AdidasChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdidasChallenge_AdidasChallengeUITests.framework; path = "Pods-AdidasChallenge-AdidasChallengeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A4FB23DCAD1E9401F4104C592B0EBC1 /* Pods-AdidasChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D9597D744246AE3B0C7DDCE7F4E8ABD /* Pods-AdidasChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdidasChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		436CDAE768648E7367177D1DD509156E /* Pods-AdidasChallenge-AdidasChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasChallenge-AdidasChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4380F1645BBD158A8ECF5920429E49CA /* Pods-AdidasChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5313F2C5FEEFE106BE2BB4FD19605043 /* Pods-AdidasChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdidasChallenge-umbrella.h"; sourceTree = "<group>"; };
+		61ED79A48D215CF6841AA5AB4F3115AF /* Pods-AdidasChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7D3A9A6E0EC55327843DF2DCE9D501C8 /* Pods-AdidasChallenge-AdidasChallengeUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasChallenge-AdidasChallengeUITests-Info.plist"; sourceTree = "<group>"; };
+		82F19B531A53C7CBE7A4CB4D5F35E61F /* Pods-AdidasChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		8F3196350D86B46A323FEBAC4AD939F0 /* Pods-AdidasChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93961EC0EAAB1128611027D82CEAECB1 /* Pods_AdidasChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdidasChallenge.framework; path = "Pods-AdidasChallenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B1C3A1E2512461C28C2E8BAFA38884 /* Pods-AdidasChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdidasChallenge-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A16F37FBEBFEC0DD5DB43E7C9137F257 /* Pods-AdidasChallengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdidasChallengeTests-dummy.m"; sourceTree = "<group>"; };
+		A76417D0976AE52F211EB4DE658F1368 /* Pods-AdidasChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdidasChallengeTests-umbrella.h"; sourceTree = "<group>"; };
+		A7A0B57E229821C9B47E2B017BD5FEF3 /* Pods-AdidasChallenge-AdidasChallengeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdidasChallenge-AdidasChallengeUITests-dummy.m"; sourceTree = "<group>"; };
+		A95D2D4E9ADFE98AC5042060441BB22D /* Pods-AdidasChallenge-AdidasChallengeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdidasChallenge-AdidasChallengeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF7AEE1EB60E8F3F55FF8C68A89B43D0 /* Pods-AdidasChallenge-AdidasChallengeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AdidasChallenge-AdidasChallengeUITests.modulemap"; sourceTree = "<group>"; };
+		DC2E57212DFFCF731051A1CA6B89C51F /* Pods-AdidasChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AdidasChallenge.modulemap"; sourceTree = "<group>"; };
+		EC7EF7653A74B18AC9620BBAB89C7A40 /* Pods-AdidasChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		F99ACBF209082B2E1FF008D02EF2199D /* Pods-AdidasChallenge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasChallenge-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38DE8F5518C77D2622F7B1968E1BAE92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071B54FD1B186D6144C0D7EC0066065C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BA33540A62FE3C739D41DA8C0366C8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A18764E3C2C565CDC24966791C7B33 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728629597F27548F6377562FCB156D89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C258C6C1F646FC0C081B1A3D7AE6FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7143F71AD87A6770C6887EC3404E5261 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA9B2B31FB2E65CE8386D50B82AE73FA /* Pods-AdidasChallenge */,
+				CA7C36FFF2F44BFCDB7406F0EFF51067 /* Pods-AdidasChallenge-AdidasChallengeUITests */,
+				DA9DB8D20B9324F692FA5797B471D8C4 /* Pods-AdidasChallengeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A77BA9F545FFEFBD5287550E896C7A67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93961EC0EAAB1128611027D82CEAECB1 /* Pods_AdidasChallenge.framework */,
+				396CDC7C931E11CC01C0F7ACD046C124 /* Pods_AdidasChallenge_AdidasChallengeUITests.framework */,
+				29DC154D4F49DF3BBF6DAAB55618FE32 /* Pods_AdidasChallengeTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA9B2B31FB2E65CE8386D50B82AE73FA /* Pods-AdidasChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				DC2E57212DFFCF731051A1CA6B89C51F /* Pods-AdidasChallenge.modulemap */,
+				3D9597D744246AE3B0C7DDCE7F4E8ABD /* Pods-AdidasChallenge-acknowledgements.markdown */,
+				82F19B531A53C7CBE7A4CB4D5F35E61F /* Pods-AdidasChallenge-acknowledgements.plist */,
+				93B1C3A1E2512461C28C2E8BAFA38884 /* Pods-AdidasChallenge-dummy.m */,
+				F99ACBF209082B2E1FF008D02EF2199D /* Pods-AdidasChallenge-Info.plist */,
+				5313F2C5FEEFE106BE2BB4FD19605043 /* Pods-AdidasChallenge-umbrella.h */,
+				61ED79A48D215CF6841AA5AB4F3115AF /* Pods-AdidasChallenge.debug.xcconfig */,
+				EC7EF7653A74B18AC9620BBAB89C7A40 /* Pods-AdidasChallenge.release.xcconfig */,
+			);
+			name = "Pods-AdidasChallenge";
+			path = "Target Support Files/Pods-AdidasChallenge";
+			sourceTree = "<group>";
+		};
+		CA7C36FFF2F44BFCDB7406F0EFF51067 /* Pods-AdidasChallenge-AdidasChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF7AEE1EB60E8F3F55FF8C68A89B43D0 /* Pods-AdidasChallenge-AdidasChallengeUITests.modulemap */,
+				A95D2D4E9ADFE98AC5042060441BB22D /* Pods-AdidasChallenge-AdidasChallengeUITests-acknowledgements.markdown */,
+				35340705837B4905E0AFC3A88924CF3C /* Pods-AdidasChallenge-AdidasChallengeUITests-acknowledgements.plist */,
+				A7A0B57E229821C9B47E2B017BD5FEF3 /* Pods-AdidasChallenge-AdidasChallengeUITests-dummy.m */,
+				7D3A9A6E0EC55327843DF2DCE9D501C8 /* Pods-AdidasChallenge-AdidasChallengeUITests-Info.plist */,
+				3510E815D66D948284B3B8BF64AB3766 /* Pods-AdidasChallenge-AdidasChallengeUITests-umbrella.h */,
+				436CDAE768648E7367177D1DD509156E /* Pods-AdidasChallenge-AdidasChallengeUITests.debug.xcconfig */,
+				2B049CD5BBAB5BB2BF7D10CCB3930627 /* Pods-AdidasChallenge-AdidasChallengeUITests.release.xcconfig */,
+			);
+			name = "Pods-AdidasChallenge-AdidasChallengeUITests";
+			path = "Target Support Files/Pods-AdidasChallenge-AdidasChallengeUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A77BA9F545FFEFBD5287550E896C7A67 /* Products */,
+				7143F71AD87A6770C6887EC3404E5261 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA9DB8D20B9324F692FA5797B471D8C4 /* Pods-AdidasChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				18465B154524791672A0A717DCDB2935 /* Pods-AdidasChallengeTests.modulemap */,
+				2CCF0EDC604048D38C719CC3DB6E4A45 /* Pods-AdidasChallengeTests-acknowledgements.markdown */,
+				4380F1645BBD158A8ECF5920429E49CA /* Pods-AdidasChallengeTests-acknowledgements.plist */,
+				A16F37FBEBFEC0DD5DB43E7C9137F257 /* Pods-AdidasChallengeTests-dummy.m */,
+				3372F14D2C56D3DED91DD6EC91FB2BEB /* Pods-AdidasChallengeTests-Info.plist */,
+				A76417D0976AE52F211EB4DE658F1368 /* Pods-AdidasChallengeTests-umbrella.h */,
+				8F3196350D86B46A323FEBAC4AD939F0 /* Pods-AdidasChallengeTests.debug.xcconfig */,
+				3A4FB23DCAD1E9401F4104C592B0EBC1 /* Pods-AdidasChallengeTests.release.xcconfig */,
+			);
+			name = "Pods-AdidasChallengeTests";
+			path = "Target Support Files/Pods-AdidasChallengeTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		13ACF327CE66D9CFE84839706890D4E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012501982FB1825DFEFD3456911C26FC /* Pods-AdidasChallenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA44E00C4ACE1C845BDD1C32141C3F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51ACF90D49DB294213959363127E084 /* Pods-AdidasChallengeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E72A316861BD6DDA76826FA823594635 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A095A3C7EC61A16E824806B811E7530C /* Pods-AdidasChallenge-AdidasChallengeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B8CDBDCE06DF56D9C1437813B732FC4 /* Pods-AdidasChallenge-AdidasChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE1A46F974FFC2796D982092C7C72852 /* Build configuration list for PBXNativeTarget "Pods-AdidasChallenge-AdidasChallengeUITests" */;
+			buildPhases = (
+				E72A316861BD6DDA76826FA823594635 /* Headers */,
+				B12F355D903886907F5FF24804C90E4F /* Sources */,
+				6BA33540A62FE3C739D41DA8C0366C8D /* Frameworks */,
+				48A1782D34F26214BCB0C511A5D364B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AdidasChallenge-AdidasChallengeUITests";
+			productName = "Pods-AdidasChallenge-AdidasChallengeUITests";
+			productReference = 396CDC7C931E11CC01C0F7ACD046C124 /* Pods_AdidasChallenge_AdidasChallengeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7CF8FC32A2C8DAAC54BC24733A5FE94D /* Pods-AdidasChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3EFD8C959AEC7E81A0C4968E651BD1 /* Build configuration list for PBXNativeTarget "Pods-AdidasChallengeTests" */;
+			buildPhases = (
+				ABA44E00C4ACE1C845BDD1C32141C3F5 /* Headers */,
+				ADF30437F3BA8EA805107E3627CB336B /* Sources */,
+				728629597F27548F6377562FCB156D89 /* Frameworks */,
+				51A6C205594576ED30433D04E026E2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1C032DCE3E6C8D730FED61ADAF99119 /* PBXTargetDependency */,
+			);
+			name = "Pods-AdidasChallengeTests";
+			productName = "Pods-AdidasChallengeTests";
+			productReference = 29DC154D4F49DF3BBF6DAAB55618FE32 /* Pods_AdidasChallengeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7390695731AB2637D4F2847D5F67EDA /* Pods-AdidasChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA3B78938D381AD53BA6347FD7D6DAD /* Build configuration list for PBXNativeTarget "Pods-AdidasChallenge" */;
+			buildPhases = (
+				13ACF327CE66D9CFE84839706890D4E9 /* Headers */,
+				1EEC76FDC234C6A6FB7DDBC85693499B /* Sources */,
+				38DE8F5518C77D2622F7B1968E1BAE92 /* Frameworks */,
+				E2A83029A1D1B4DF96E910A3E806B9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AdidasChallenge";
+			productName = "Pods-AdidasChallenge";
+			productReference = 93961EC0EAAB1128611027D82CEAECB1 /* Pods_AdidasChallenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A77BA9F545FFEFBD5287550E896C7A67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7390695731AB2637D4F2847D5F67EDA /* Pods-AdidasChallenge */,
+				3B8CDBDCE06DF56D9C1437813B732FC4 /* Pods-AdidasChallenge-AdidasChallengeUITests */,
+				7CF8FC32A2C8DAAC54BC24733A5FE94D /* Pods-AdidasChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48A1782D34F26214BCB0C511A5D364B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51A6C205594576ED30433D04E026E2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A83029A1D1B4DF96E910A3E806B9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EEC76FDC234C6A6FB7DDBC85693499B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAD0C4019E695A0B86B7281A87981F3 /* Pods-AdidasChallenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF30437F3BA8EA805107E3627CB336B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC7BD722C029743A81AB9D0DE480A24 /* Pods-AdidasChallengeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12F355D903886907F5FF24804C90E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233E2D0C5C551F52F39C4C1D54012CBA /* Pods-AdidasChallenge-AdidasChallengeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1C032DCE3E6C8D730FED61ADAF99119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AdidasChallenge";
+			target = F7390695731AB2637D4F2847D5F67EDA /* Pods-AdidasChallenge */;
+			targetProxy = 736658602E2CA40FCB04B96A9218DA76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24ECD79820048CE59CFE2328F1FADDD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A4FB23DCAD1E9401F4104C592B0EBC1 /* Pods-AdidasChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasChallengeTests/Pods-AdidasChallengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasChallengeTests/Pods-AdidasChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5503B69399384CA537BC1B18E90CC0BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F3196350D86B46A323FEBAC4AD939F0 /* Pods-AdidasChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasChallengeTests/Pods-AdidasChallengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasChallengeTests/Pods-AdidasChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E951E84E89F3D68F9BC2BD0B5B087DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436CDAE768648E7367177D1DD509156E /* Pods-AdidasChallenge-AdidasChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasChallenge-AdidasChallengeUITests/Pods-AdidasChallenge-AdidasChallengeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasChallenge-AdidasChallengeUITests/Pods-AdidasChallenge-AdidasChallengeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9F27F3AE64606A6302175AFEB2CDB141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B049CD5BBAB5BB2BF7D10CCB3930627 /* Pods-AdidasChallenge-AdidasChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasChallenge-AdidasChallengeUITests/Pods-AdidasChallenge-AdidasChallengeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasChallenge-AdidasChallengeUITests/Pods-AdidasChallenge-AdidasChallengeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8DB75519B50B1C01AD71C2E49645B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61ED79A48D215CF6841AA5AB4F3115AF /* Pods-AdidasChallenge.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasChallenge/Pods-AdidasChallenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasChallenge/Pods-AdidasChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F852CA26128A4F0D74C5CF9D6D93C359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC7EF7653A74B18AC9620BBAB89C7A40 /* Pods-AdidasChallenge.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasChallenge/Pods-AdidasChallenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasChallenge/Pods-AdidasChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A3EFD8C959AEC7E81A0C4968E651BD1 /* Build configuration list for PBXNativeTarget "Pods-AdidasChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5503B69399384CA537BC1B18E90CC0BA /* Debug */,
+				24ECD79820048CE59CFE2328F1FADDD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA3B78938D381AD53BA6347FD7D6DAD /* Build configuration list for PBXNativeTarget "Pods-AdidasChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8DB75519B50B1C01AD71C2E49645B56 /* Debug */,
+				F852CA26128A4F0D74C5CF9D6D93C359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE1A46F974FFC2796D982092C7C72852 /* Build configuration list for PBXNativeTarget "Pods-AdidasChallenge-AdidasChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E951E84E89F3D68F9BC2BD0B5B087DA /* Debug */,
+				9F27F3AE64606A6302175AFEB2CDB141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
