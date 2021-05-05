@@ -8,3 +8,5 @@
 "error_row_cta" = "Opnieuw";
 "search_no_result_title" = "We hebben '%@' niet gevonden.";
 "search_no_result_description" = "We zoeken op titel en descripties.";
+"search_input_cancel" = "Annuleer";
+"search_input_placeholder" = "Zoek voor een product...";

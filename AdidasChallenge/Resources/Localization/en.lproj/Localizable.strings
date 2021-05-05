@@ -8,3 +8,5 @@
 "error_row_cta" = "Retry";
 "search_no_result_title" = "We could not find '%@'.";
 "search_no_result_description" = "We search for titles and descriptions.";
+"search_input_cancel" = "Cancel";
+"search_input_placeholder" = "Search for a product...";

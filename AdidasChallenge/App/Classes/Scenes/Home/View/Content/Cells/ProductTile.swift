@@ -51,6 +51,7 @@ extension ProductTile {
             return
         }
         
+        thumbnail.downloaded(from: viewModel.thumbnail ?? "", defaultImage: UIImage(named: "no-image-found-test"))
     }
     
     private func updateTitleLabel() {
@@ -60,12 +61,12 @@ extension ProductTile {
     
     private func updateDescriptionLabel() {
         descriptionLabel.isHidden = viewModel == nil
-        descriptionLabel.text = viewModel?.title
+        descriptionLabel.text = viewModel?.description
     }
     
     private func updatePriceLabel() {
         priceLabel.isHidden = viewModel == nil
-        priceLabel.text = viewModel?.title
+        priceLabel.text = viewModel?.price
     }
     
 }
@@ -101,16 +102,17 @@ private extension ProductTile {
         
         thumbnailContainer.addSubview(thumbnail)
         thumbnail.easy.layout(
-            Center()
+            Edges()
         )
+        thumbnail.contentMode = .scaleAspectFill
     }
     
     func setupVerticalStackView() {
         verticalStackView.easy.layout(
             Left(16).to(thumbnailContainer, .right),
             Right(16),
-            Top().to(thumbnailContainer, .top),
-            Bottom().to(thumbnailContainer, .bottom)
+            Top(>=0).to(thumbnailContainer, .top),
+            CenterY()
         )
         
         verticalStackView.axis = .vertical
@@ -125,6 +127,7 @@ private extension ProductTile {
     
     func setupDescriptionLabel() {
         descriptionLabel.textColor = .black
+        descriptionLabel.numberOfLines = 3
     }
     
     func setupPriceLabel() {

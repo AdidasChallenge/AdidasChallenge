@@ -12,7 +12,6 @@ import Lottie
 final class HomeContentView: UIView {
     
     // MARK: Internal
-    weak var delegate: HomeContentViewDelegate?
     weak var collectionViewDataSource: UICollectionViewDataSource? {
         didSet {
             collectionView.dataSource = collectionViewDataSource
@@ -28,13 +27,11 @@ final class HomeContentView: UIView {
     lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     private(set) var errorView = ErrorView()
     private(set) var noResultView = NoSearchResultView()
-    private let loadingAnimation = AnimationView(name: "loading-spinner")
+    private(set) var searchBarView = SearchBarView()
     
+    private let loadingAnimation = AnimationView(name: "loading-spinner")
 
-    // MARK: UIElements
-    init(delegate: HomeContentViewDelegate) {
-        self.delegate = delegate
-        
+    init() {
         super.init(frame: .zero)
         
         setup()
@@ -44,19 +41,31 @@ final class HomeContentView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("xibs not supported")
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        searchBarView.easy.layout(Top(safeAreaInsets.top))
+    }
 }
+
 // MARK: - Setup
 private extension HomeContentView {
     func setup() {
-        backgroundColor = .systemPink
+        backgroundColor = .init(hex: "F1F1F1")
         
         setupContent()
     }
     
     func setupContent() {
-        addSubview(collectionView)
-        
+        addSubviews(searchBarView, collectionView, errorView, loadingAnimation, noResultView)
+
         setupCollectionView()
+        setupLoadingAnimation()
+        setupSearchBarView()
+        setupTapGesture()
+        setupErrorView()
+        setupNoResultView()
     }
 }
 
@@ -68,10 +77,19 @@ private extension HomeContentView {
         collectionView.registerReusableCell(ProductCollectionViewCell.self)
         collectionView.alwaysBounceVertical = false
         collectionView.easy.layout(
-            Top(),
+            Top(8).to(searchBarView, .bottom),
             Left(),
             Right(),
             Bottom()
+        )
+    }
+    
+    func setupSearchBarView() {
+        searchBarView.easy.layout(
+            Left(8),
+            Right(16),
+            Top(),
+            Height(44)
         )
     }
     
@@ -85,6 +103,32 @@ private extension HomeContentView {
         loadingAnimation.easy.layout(Center(),
                                      Size(92))
     }
+    
+    func setupTapGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapElsewhere))
+        tapGesture.cancelsTouchesInView = false
+        addGestureRecognizer(tapGesture)
+    }
+    
+    func setupErrorView() {
+        errorView.isHidden = true
+        errorView.easy.layout(
+            Left(>=8),
+            Right(<=8),
+            CenterX().with(.high),
+            Bottom(24)
+        )
+    }
+
+    func setupNoResultView() {
+        noResultView.isHidden = true
+        noResultView.easy.layout(
+            Left(16),
+            Right(16),
+            CenterY()
+        )
+    }
+    
 }
 
 // MARK: - Internal methods
@@ -103,5 +147,12 @@ extension HomeContentView {
 private extension HomeContentView {
     func updateCollectionView() {
         collectionView.reloadData()
+    }
+}
+
+// MARK: Actions
+private extension HomeContentView {
+    @objc func didTapElsewhere() {
+        searchBarView.resignResponder()
     }
 }

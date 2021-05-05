@@ -9,7 +9,7 @@ import UIKit
 
 extension ProductTile {
     struct ViewModel: Equatable {
-        let thumbnailURL: URL?
+        let thumbnail: String?
         let title: String
         let description: String
         let price: String
