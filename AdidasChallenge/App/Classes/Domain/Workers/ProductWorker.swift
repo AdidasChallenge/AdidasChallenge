@@ -9,4 +9,5 @@ import Foundation
 
 protocol ProductWorker: AnyObject {
     func getProducts(searchTerm: String, completion: @escaping (Result<[Product], Error>) -> Void)
+    func resetCache()
 }

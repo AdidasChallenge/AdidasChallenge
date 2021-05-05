@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.4.3)
   - EasyPeasy (1.10.0)
   - Firebase/CoreOnly (7.11.0):
     - FirebaseCore (= 7.11.0)
@@ -48,6 +49,7 @@ PODS:
     - Swinject (~> 2.7)
 
 DEPENDENCIES:
+  - Alamofire
   - EasyPeasy
   - Firebase/Crashlytics
   - lottie-ios
@@ -57,6 +59,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - EasyPeasy
     - Firebase
     - FirebaseCore
@@ -73,6 +76,7 @@ SPEC REPOS:
     - SwinjectAutoregistration
 
 SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   EasyPeasy: b9b1bae024d21a7dfa9bad26d6826d88348cc6f1
   Firebase: c121feb35e4126c0b355e3313fa9b487d47319fd
   FirebaseCore: 907447d8917a4d3eb0cce2829c5a0ad21d90b432
@@ -88,6 +92,6 @@ SPEC CHECKSUMS:
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
   SwinjectAutoregistration: 330f5012642a8b5c89a8a4adb0c5e52df07382c0
 
-PODFILE CHECKSUM: c3e5c84337af7e97fef7dcbd145fe407e969e7f3
+PODFILE CHECKSUM: 2df6fb5c075c7b4d3a9a7498caf57eb3a0f95baf
 
 COCOAPODS: 1.10.1

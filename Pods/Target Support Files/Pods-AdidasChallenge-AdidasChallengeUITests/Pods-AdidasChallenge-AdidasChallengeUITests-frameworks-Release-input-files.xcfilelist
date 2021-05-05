@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-AdidasChallenge-AdidasChallengeUITests/Pods-AdidasChallenge-AdidasChallengeUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework
 ${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework
 ${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework

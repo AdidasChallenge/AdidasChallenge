@@ -14,6 +14,12 @@ final class HomePresenter {
     private weak var displayLogic: HomeDisplayLogic?
     private var router: HomeRouterDelegate?
     
+    private let productMapper: ProductViewModelMapper
+    
+    init(productMapper: ProductViewModelMapper) {
+        self.productMapper = productMapper
+    }
+    
     func setup(with displayLogic: HomeDisplayLogic?, router: HomeRouterDelegate?) {
         self.displayLogic = displayLogic
         self.router = router
@@ -22,5 +28,7 @@ final class HomePresenter {
 
 // MARK: - Responses
 extension HomePresenter {
-    
+    func presentProducts(products: [Product]) {
+        displayLogic?.displayProducts(tiles: productMapper.map(products: products))
+    }
 }

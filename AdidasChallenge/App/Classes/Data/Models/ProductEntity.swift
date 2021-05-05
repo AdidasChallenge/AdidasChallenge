@@ -11,7 +11,7 @@ struct ProductEntity: Decodable {
     let id: String?
     let name: String?
     let description: String?
-    let price: String?
+    let price: Int?
     let currency: String?
-    let imageUrl: String?
+    let imgUrl: String?
 }

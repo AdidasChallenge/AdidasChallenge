@@ -18,5 +18,7 @@ public final class AppAssembly: Assembly {
         SceneAssembly().assemble(container: container)
         CoordinatorAssembly().assemble(container: container)
         SingletonAssembly().assemble(container: container)
+        WorkerAssembly().assemble(container: container)
+        MapperAssembly().assemble(container: container)
     }
 }

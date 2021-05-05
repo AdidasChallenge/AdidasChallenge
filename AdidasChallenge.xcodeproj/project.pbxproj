@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		580B6F70447BF33C4CF9C397 /* Pods_AdidasChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B659142D3E7B7E2BBB6143 /* Pods_AdidasChallenge.framework */; };
 		8DCE906A6EF429F2DE88DB53 /* Pods_AdidasChallenge_AdidasChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774FF7D9B33055066F4033FD /* Pods_AdidasChallenge_AdidasChallengeUITests.framework */; };
+		960586002642BE9400080347 /* WorkerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960585FF2642BE9400080347 /* WorkerAssembly.swift */; };
+		960586052642BECE00080347 /* MapperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960586042642BECE00080347 /* MapperAssembly.swift */; };
+		9605860D2642C02600080347 /* ProductViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605860C2642C02600080347 /* ProductViewModelMapper.swift */; };
 		969196A12641C01500F19088 /* ApplicationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196A02641C01500F19088 /* ApplicationDependencies.swift */; };
 		969196A62641C05C00F19088 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196A52641C05C00F19088 /* AppAssembly.swift */; };
 		969196AD2641C0CC00F19088 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196AC2641C0CC00F19088 /* AppCoordinator.swift */; };
@@ -94,6 +97,9 @@
 		5EB819DABD0C46706D4C9F88 /* Pods_AdidasChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdidasChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		774FF7D9B33055066F4033FD /* Pods_AdidasChallenge_AdidasChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdidasChallenge_AdidasChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B659142D3E7B7E2BBB6143 /* Pods_AdidasChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdidasChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		960585FF2642BE9400080347 /* WorkerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerAssembly.swift; sourceTree = "<group>"; };
+		960586042642BECE00080347 /* MapperAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperAssembly.swift; sourceTree = "<group>"; };
+		9605860C2642C02600080347 /* ProductViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelMapper.swift; sourceTree = "<group>"; };
 		969196A02641C01500F19088 /* ApplicationDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDependencies.swift; sourceTree = "<group>"; };
 		969196A52641C05C00F19088 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		969196AC2641C0CC00F19088 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -204,6 +210,27 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9605860A2642C00600080347 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9605860B2642C01A00080347 /* Mappers */,
+				969197B12641F9D300F19088 /* Helpers */,
+				969197782641F2A700F19088 /* Extensions */,
+				969196C52641C1BF00F19088 /* Base */,
+				969196AA2641C0A500F19088 /* Coordinators */,
+				969196AB2641C0AC00F19088 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9605860B2642C01A00080347 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				9605860C2642C02600080347 /* ProductViewModelMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
 		9691969D2641BFF300F19088 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,14 +243,10 @@
 		9691969E2641C00100F19088 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9691969F2641C00700F19088 /* Assembly */,
 				969198552642B21F00F19088 /* Data */,
 				969198542642B1FE00F19088 /* Domain */,
-				969197B12641F9D300F19088 /* Helpers */,
-				969197782641F2A700F19088 /* Extensions */,
-				969196C52641C1BF00F19088 /* Base */,
-				9691969F2641C00700F19088 /* Assembly */,
-				969196AA2641C0A500F19088 /* Coordinators */,
-				969196AB2641C0AC00F19088 /* Scenes */,
+				9605860A2642C00600080347 /* Presentation */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -236,6 +259,8 @@
 				969197302641DC6C00F19088 /* SceneAssembly.swift */,
 				969197352641DD1600F19088 /* SingletonAssembly.swift */,
 				9691973A2641DD4900F19088 /* CoordinatorAssembly.swift */,
+				960585FF2642BE9400080347 /* WorkerAssembly.swift */,
+				960586042642BECE00080347 /* MapperAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -904,6 +929,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				969196D62641C59700F19088 /* HomeCoordinator+Dependencies.swift in Sources */,
+				960586002642BE9400080347 /* WorkerAssembly.swift in Sources */,
 				9691977B2641F2BD00F19088 /* String+Extension.swift in Sources */,
 				969198032642883500F19088 /* UIEdgeInsets+Extension.swift in Sources */,
 				9691972C2641DB7400F19088 /* LaunchViewControllerFactory.swift in Sources */,
@@ -919,11 +945,13 @@
 				969197AD2641F96900F19088 /* ProductTile.swift in Sources */,
 				969197C12641FAD600F19088 /* ProductTile+ViewModel.swift in Sources */,
 				969197002641C69000F19088 /* HomeViewController.swift in Sources */,
+				9605860D2642C02600080347 /* ProductViewModelMapper.swift in Sources */,
 				969196AD2641C0CC00F19088 /* AppCoordinator.swift in Sources */,
 				969196FE2641C69000F19088 /* HomeAssembly.swift in Sources */,
 				9691976C2641F17C00F19088 /* NoSearchResultView.swift in Sources */,
 				969197272641D90000F19088 /* LaunchAssembly.swift in Sources */,
 				969198502642A8E900F19088 /* ProductService.swift in Sources */,
+				960586052642BECE00080347 /* MapperAssembly.swift in Sources */,
 				969197D0264200B400F19088 /* UICollectionView+Extension.swift in Sources */,
 				9691979D2641F56800F19088 /* NoSearchResultView+ViewModel.swift in Sources */,
 				969197312641DC6C00F19088 /* SceneAssembly.swift in Sources */,

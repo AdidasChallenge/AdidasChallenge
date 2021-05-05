@@ -12,18 +12,17 @@ struct ProductEntityMapper {
         guard let id = entity.id,
               let name = entity.name,
               let description = entity.description,
-              let currency = entity.currency,
-              let price = entity.price,
-              let image = entity.imageUrl else {
+              let price = entity.price
+        else {
             return nil
         }
         
         return .init(id: id,
                      name: name,
                      description: description,
-                     currency: currency,
-                     price: price,
-                     image: image
+                     currency: entity.currency ?? "$",
+                     price: "\(price)",
+                     image: entity.imgUrl
         )
     }
 }

@@ -13,5 +13,5 @@ struct Product {
     let description: String
     let currency: String
     let price: String
-    let image: String
+    let image: String?
 }

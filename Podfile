@@ -26,6 +26,10 @@ def injection_pods
     pod 'SwinjectAutoregistration'
 end
 
+def networking_pods
+    pod 'Alamofire'
+end
+
 
 target 'AdidasChallenge' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -35,6 +39,7 @@ target 'AdidasChallenge' do
   injection_pods
   user_interface_pods
   firebase_pods
+  networking_pods
   
   target 'AdidasChallengeTests' do
     inherit! :search_paths
