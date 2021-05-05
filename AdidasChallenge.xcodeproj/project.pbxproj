@@ -12,6 +12,13 @@
 		960586002642BE9400080347 /* WorkerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960585FF2642BE9400080347 /* WorkerAssembly.swift */; };
 		960586052642BECE00080347 /* MapperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960586042642BECE00080347 /* MapperAssembly.swift */; };
 		9605860D2642C02600080347 /* ProductViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605860C2642C02600080347 /* ProductViewModelMapper.swift */; };
+		96235CD12642D3D2009C5AA7 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CC52642D3D2009C5AA7 /* DetailInteractor.swift */; };
+		96235CD22642D3D2009C5AA7 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CC72642D3D2009C5AA7 /* DetailRouter.swift */; };
+		96235CD32642D3D2009C5AA7 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CC92642D3D2009C5AA7 /* DetailPresenter.swift */; };
+		96235CD42642D3D2009C5AA7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CCB2642D3D2009C5AA7 /* DetailViewController.swift */; };
+		96235CD52642D3D2009C5AA7 /* DetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CCD2642D3D2009C5AA7 /* DetailContentView.swift */; };
+		96235CD62642D3D2009C5AA7 /* DetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CCE2642D3D2009C5AA7 /* DetailViewControllerFactory.swift */; };
+		96235CD72642D3D2009C5AA7 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CD02642D3D2009C5AA7 /* DetailAssembly.swift */; };
 		969196A12641C01500F19088 /* ApplicationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196A02641C01500F19088 /* ApplicationDependencies.swift */; };
 		969196A62641C05C00F19088 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196A52641C05C00F19088 /* AppAssembly.swift */; };
 		969196AD2641C0CC00F19088 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196AC2641C0CC00F19088 /* AppCoordinator.swift */; };
@@ -100,6 +107,13 @@
 		960585FF2642BE9400080347 /* WorkerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerAssembly.swift; sourceTree = "<group>"; };
 		960586042642BECE00080347 /* MapperAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperAssembly.swift; sourceTree = "<group>"; };
 		9605860C2642C02600080347 /* ProductViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelMapper.swift; sourceTree = "<group>"; };
+		96235CC52642D3D2009C5AA7 /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		96235CC72642D3D2009C5AA7 /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		96235CC92642D3D2009C5AA7 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		96235CCB2642D3D2009C5AA7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		96235CCD2642D3D2009C5AA7 /* DetailContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailContentView.swift; sourceTree = "<group>"; };
+		96235CCE2642D3D2009C5AA7 /* DetailViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewControllerFactory.swift; sourceTree = "<group>"; };
+		96235CD02642D3D2009C5AA7 /* DetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
 		969196A02641C01500F19088 /* ApplicationDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDependencies.swift; sourceTree = "<group>"; };
 		969196A52641C05C00F19088 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		969196AC2641C0CC00F19088 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -231,6 +245,68 @@
 			path = Mappers;
 			sourceTree = "<group>";
 		};
+		96235CC02642D363009C5AA7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				96235CCF2642D3D2009C5AA7 /* Assembly */,
+				96235CC42642D3D2009C5AA7 /* Interactor */,
+				96235CC82642D3D2009C5AA7 /* Presenter */,
+				96235CC62642D3D2009C5AA7 /* Router */,
+				96235CCA2642D3D2009C5AA7 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		96235CC42642D3D2009C5AA7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				96235CC52642D3D2009C5AA7 /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		96235CC62642D3D2009C5AA7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				96235CC72642D3D2009C5AA7 /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		96235CC82642D3D2009C5AA7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				96235CC92642D3D2009C5AA7 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		96235CCA2642D3D2009C5AA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96235CCB2642D3D2009C5AA7 /* DetailViewController.swift */,
+				96235CCC2642D3D2009C5AA7 /* Content */,
+				96235CCE2642D3D2009C5AA7 /* DetailViewControllerFactory.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96235CCC2642D3D2009C5AA7 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				96235CCD2642D3D2009C5AA7 /* DetailContentView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		96235CCF2642D3D2009C5AA7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				96235CD02642D3D2009C5AA7 /* DetailAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		9691969D2641BFF300F19088 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +353,7 @@
 		969196AB2641C0AC00F19088 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				96235CC02642D363009C5AA7 /* Detail */,
 				969197052641D46C00F19088 /* Launch */,
 				969196DF2641C5C700F19088 /* Home */,
 			);
@@ -928,7 +1005,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96235CD52642D3D2009C5AA7 /* DetailContentView.swift in Sources */,
 				969196D62641C59700F19088 /* HomeCoordinator+Dependencies.swift in Sources */,
+				96235CD12642D3D2009C5AA7 /* DetailInteractor.swift in Sources */,
+				96235CD72642D3D2009C5AA7 /* DetailAssembly.swift in Sources */,
 				960586002642BE9400080347 /* WorkerAssembly.swift in Sources */,
 				9691977B2641F2BD00F19088 /* String+Extension.swift in Sources */,
 				969198032642883500F19088 /* UIEdgeInsets+Extension.swift in Sources */,
@@ -936,6 +1016,8 @@
 				969197152641D8CA00F19088 /* LaunchRouter.swift in Sources */,
 				969197362641DD1600F19088 /* SingletonAssembly.swift in Sources */,
 				969196C02641C13F00F19088 /* AppCoordinator+Dependencies.swift in Sources */,
+				96235CD62642D3D2009C5AA7 /* DetailViewControllerFactory.swift in Sources */,
+				96235CD42642D3D2009C5AA7 /* DetailViewController.swift in Sources */,
 				969198582642B24900F19088 /* Product.swift in Sources */,
 				969198242642936300F19088 /* SearchBarView.swift in Sources */,
 				969198412642A48400F19088 /* UIColor+Helper.swift in Sources */,
@@ -956,10 +1038,12 @@
 				9691979D2641F56800F19088 /* NoSearchResultView+ViewModel.swift in Sources */,
 				969197312641DC6C00F19088 /* SceneAssembly.swift in Sources */,
 				9691983C2642962600F19088 /* UIButton+Extension.swift in Sources */,
+				96235CD32642D3D2009C5AA7 /* DetailPresenter.swift in Sources */,
 				96919834264293B900F19088 /* SearchBarViewDelegate.swift in Sources */,
 				969197742641F18A00F19088 /* ErrorView.swift in Sources */,
 				969198482642A8DE00F19088 /* ProductWorker.swift in Sources */,
 				969196FF2641C69000F19088 /* HomeRouter.swift in Sources */,
+				96235CD22642D3D2009C5AA7 /* DetailRouter.swift in Sources */,
 				969197472641E9DC00F19088 /* HomeContentView.swift in Sources */,
 				96CE6AC32641A25800E73788 /* AppDelegate.swift in Sources */,
 				969197072641D47B00F19088 /* LaunchViewController.swift in Sources */,
