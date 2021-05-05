@@ -48,15 +48,11 @@ final class DetailViewController: UIViewController {
         
         navigationController?.navigationBar.isHidden = true
     }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        
-    }
 }
 
 // MARK: DetailDisplayLogic
 extension DetailViewController: DetailDisplayLogic {
+    
 }
 
 // MARK: Private setup methods
