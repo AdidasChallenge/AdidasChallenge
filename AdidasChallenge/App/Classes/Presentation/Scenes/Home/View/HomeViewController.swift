@@ -10,6 +10,8 @@ import UIKit
 
 protocol HomeDisplayLogic: AnyObject {
     func displayProducts(tiles: [ProductTile.ViewModel])
+    func displayLoading(display: Bool)
+    func displayErrorView(viewModel: ErrorView.ViewModel)
 }
 
 // MARK: ViewController
@@ -39,15 +41,32 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         setup()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         interactor.handleInitialize()
     }
 }
 
 // MARK: HomeDisplayLogic
 extension HomeViewController: HomeDisplayLogic {
+    func displayErrorView(viewModel: ErrorView.ViewModel) {
+        contentView.errorView.update(model: viewModel)
+        contentView.errorView.isHidden = false
+        displayLoading(display: false)
+    }
+    
     func displayProducts(tiles: [ProductTile.ViewModel]) {
+        contentView.errorView.isHidden = true
+        displayLoading(display: false)
         productTiles = tiles
         contentView.reloadData()
+    }
+    
+    func displayLoading(display: Bool) {
+        contentView.displayLoading(display: display)
     }
 }
 
@@ -65,7 +84,8 @@ private extension HomeViewController {
 extension HomeViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        guard let productId = productTiles?[indexPath.row].id else { return }
+        interactor.didTapProduct(productId: productId)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -89,7 +109,6 @@ extension HomeViewController: UICollectionViewDataSource {
     }
 }
 
-
 // MARK: - UICollectionViewDelegateFlowLayout
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -106,10 +125,10 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 // MARK: - SearchBarViewDelegate
 extension HomeViewController: SearchBarViewDelegate {
     func didTapCancelSearch() {
-        
+        interactor.searchTextDidChange(searchTerm: "")
     }
     
     func searchBarTextDidChange(text: String) {
-        
+        interactor.searchTextDidChange(searchTerm: text)
     }
 }

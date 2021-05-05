@@ -10,18 +10,20 @@ final class DetailInteractor {
     
     // MARK: Private properties
     private var presenter: DetailPresenter?
-    private let productWorker: ProductWorker
+    private var router: DetailRouterDelegate?
     
-    private var searchTerm: String = ""
+    private var product: Product?
     
     // MARK: Lifecycle
-    init(productWorker: ProductWorker) {
-        self.productWorker = productWorker
-    }
+    init() { }
     
     // MARK: Internal methods
-    func setup(with presenter: DetailPresenter) {
+    func setup(with presenter: DetailPresenter,
+               router: DetailRouterDelegate,
+               product: Product) {
         self.presenter = presenter
+        self.router = router
+        self.product = product
     }
 }
 
@@ -29,14 +31,6 @@ final class DetailInteractor {
 extension DetailInteractor {
     
     func handleInitialize() {
-        productWorker.getProducts(searchTerm: searchTerm, completion: { [weak self] response in
-            switch response {
-            case .success(let products):
-                
-                self?.presenter?.presentProducts(products: products)
-            case .failure(let error):
-                break // TODO: Show error that something has gone wrong :)
-            }
-        })
+        
     }
 }

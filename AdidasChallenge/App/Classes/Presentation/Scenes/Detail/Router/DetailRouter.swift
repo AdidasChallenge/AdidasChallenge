@@ -9,5 +9,5 @@
 import Foundation
 
 protocol DetailRouterDelegate: AnyObject {
-    func showDetail()
+    func dismissDetail()
 }

@@ -45,7 +45,7 @@ final class HomeContentView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        searchBarView.easy.layout(Top(safeAreaInsets.top))
+        searchBarView.easy.layout(Top(max(safeAreaInsets.top, 44)))
     }
 }
 

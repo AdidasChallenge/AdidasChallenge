@@ -14,24 +14,42 @@ final class HomeCoordinator: Coordinator {
     private var navigationController: UINavigationController?
     private var childCoordinator: Coordinator?
     
-    init(dependencies: Dependencies, rootViewController: UIViewController) {
+    init(dependencies: Dependencies) {
         self.dependencies = dependencies
-        self.rootViewController = rootViewController
     }
     
     func start() {
-        guard let navigationController = rootViewController as? NavigationController else { return }
+        let homeVC = dependencies.homeViewControllerFactory.make(with: self)
         
-        var loginVC: UIViewController
-        loginVC = dependencies.homeViewControllerFactory.make(with: self)
+        let navigationController = NavigationController(rootViewController: homeVC)
         
-        navigationController.pushViewController(loginVC, animated: true)
+        rootViewController = navigationController
+        
+    }
+    
+    deinit {
+        rootViewController = nil
     }
 }
 
 // MARK: LaunchRoutable
 extension HomeCoordinator: HomeRouterDelegate {
-    func showDetail() {
+    func showDetail(product: Product) {
+        guard let navigationController = rootViewController as? NavigationController else { return }
         
+        var detailVC: UIViewController
+        detailVC = dependencies.detailViewControllerFactory.make(with: self, product: product)
+        
+        navigationController.pushViewController(detailVC, animated: true)
     }
 }
+// MARK: LaunchRoutable
+extension HomeCoordinator: DetailRouterDelegate {
+    func dismissDetail() {
+        guard let detailVC = rootViewController?.presentedViewController as? DetailViewController else {
+            return
+        }
+        detailVC.dismiss(animated: true)
+    }
+}
+

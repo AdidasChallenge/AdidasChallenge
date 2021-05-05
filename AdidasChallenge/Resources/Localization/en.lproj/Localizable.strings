@@ -10,3 +10,4 @@
 "search_no_result_description" = "We search for titles and descriptions.";
 "search_input_cancel" = "Cancel";
 "search_input_placeholder" = "Search for a product...";
+"search_error_title" = "We could not process your search request.";

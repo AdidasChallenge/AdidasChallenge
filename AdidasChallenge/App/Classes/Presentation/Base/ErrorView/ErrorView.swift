@@ -124,8 +124,9 @@ private extension ErrorView {
     }
     
     func setupRetryButton() {
-        retryButton.tintColor = .lightGray
+        retryButton.tintColor = .black
         retryButton.setTitle("error_row_cta".localized(), for: .normal)
+        retryButton.setTitleColor(.black, for: .normal)
         retryButton.addTarget(self, action: #selector(retryButtonPressed(_:)), for: .touchUpInside)
         retryButton.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         

@@ -19,8 +19,8 @@ struct HomeViewControllerFactory {
         let presenter = presenterProvider.instance
         let viewController = HomeViewController(interactor: interactor)
         
-        interactor.setup(with: presenter)
-        presenter.setup(with: viewController, router: router)
+        interactor.setup(with: presenter, router: router)
+        presenter.setup(with: viewController)
         
         return viewController
     }

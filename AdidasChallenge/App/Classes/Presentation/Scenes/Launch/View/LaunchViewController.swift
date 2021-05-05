@@ -42,6 +42,7 @@ final class LaunchViewController: UIViewController {
         super.viewWillAppear(animated)
         
         interactor.handleInitialize()
+        view.backgroundColor = .systemPink
     }
 }
 

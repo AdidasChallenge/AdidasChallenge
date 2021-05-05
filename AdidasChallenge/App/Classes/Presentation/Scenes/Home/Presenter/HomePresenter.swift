@@ -12,7 +12,6 @@ final class HomePresenter {
     
     // MARK: private properties
     private weak var displayLogic: HomeDisplayLogic?
-    private var router: HomeRouterDelegate?
     
     private let productMapper: ProductViewModelMapper
     
@@ -20,9 +19,8 @@ final class HomePresenter {
         self.productMapper = productMapper
     }
     
-    func setup(with displayLogic: HomeDisplayLogic?, router: HomeRouterDelegate?) {
+    func setup(with displayLogic: HomeDisplayLogic?) {
         self.displayLogic = displayLogic
-        self.router = router
     }
 }
 
@@ -30,5 +28,13 @@ final class HomePresenter {
 extension HomePresenter {
     func presentProducts(products: [Product]) {
         displayLogic?.displayProducts(tiles: productMapper.map(products: products))
+    }
+    
+    func presentLoading(display: Bool) {
+        displayLogic?.displayLoading(display: display)
+    }
+    
+    func presentError(retryAction: (() -> Void)?) {
+        displayLogic?.displayErrorView(viewModel: ErrorView.ViewModel(title: "search_error_title".localized(), retryAction: retryAction))
     }
 }

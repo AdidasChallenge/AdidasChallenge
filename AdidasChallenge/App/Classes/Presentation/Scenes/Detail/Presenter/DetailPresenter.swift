@@ -12,23 +12,15 @@ final class DetailPresenter {
     
     // MARK: private properties
     private weak var displayLogic: DetailDisplayLogic?
-    private var router: DetailRouterDelegate?
-    
-    private let productMapper: ProductViewModelMapper
-    
-    init(productMapper: ProductViewModelMapper) {
-        self.productMapper = productMapper
+    init() {
+        
     }
     
-    func setup(with displayLogic: DetailDisplayLogic?, router: DetailRouterDelegate?) {
+    func setup(with displayLogic: DetailDisplayLogic?) {
         self.displayLogic = displayLogic
-        self.router = router
     }
 }
 
 // MARK: - Responses
 extension DetailPresenter {
-    func presentProducts(products: [Product]) {
-        displayLogic?.displayProducts(tiles: productMapper.map(products: products))
-    }
 }

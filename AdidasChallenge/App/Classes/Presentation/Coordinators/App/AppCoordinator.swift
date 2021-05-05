@@ -47,11 +47,7 @@ public final class AppCoordinator: UIViewController, Coordinator {
     }
     
     public func start() {
-        
-        setCurrentChild(nextViewController:
-                            NavigationController(
-                                rootViewController: dependencies.launchViewControllerFactory.make(with: self)))
-        
+        setCurrentChild(nextViewController: dependencies.launchViewControllerFactory.make(with: self))
     }
 }
 
@@ -62,9 +58,11 @@ extension AppCoordinator: LaunchRouterDelegate {
     }
     
     private func showHome() {
-        guard let currentChild = currentChild else { return }
-        currentCoordinator = dependencies.homeCoordinatorFactory.make(rootViewController: currentChild)
-        currentCoordinator?.start()
+        let homeCoordinator = dependencies.homeCoordinatorFactory.make()
+        homeCoordinator.start()
+        setCurrentChild(nextViewController: homeCoordinator.rootViewController)
+        
+        self.currentCoordinator = homeCoordinator
     }
 }
 

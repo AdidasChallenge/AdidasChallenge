@@ -14,13 +14,13 @@ struct DetailViewControllerFactory {
     let interactorProvider: Provider<DetailInteractor>
     let presenterProvider: Provider<DetailPresenter>
     
-    func make(with router: DetailRouterDelegate) -> DetailViewController {
+    func make(with router: DetailRouterDelegate, product: Product) -> DetailViewController {
         let interactor = interactorProvider.instance
         let presenter = presenterProvider.instance
         let viewController = DetailViewController(interactor: interactor)
         
-        interactor.setup(with: presenter)
-        presenter.setup(with: viewController, router: router)
+        interactor.setup(with: presenter, router: router, product: product)
+        presenter.setup(with: viewController)
         
         return viewController
     }

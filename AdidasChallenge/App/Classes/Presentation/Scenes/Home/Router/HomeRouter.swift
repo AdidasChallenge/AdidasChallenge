@@ -9,5 +9,5 @@
 import Foundation
 
 protocol HomeRouterDelegate: AnyObject {
-    func showDetail()
+    func showDetail(product: Product)
 }

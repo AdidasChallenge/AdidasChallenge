@@ -59,6 +59,7 @@ final class ProductService: ProductWorker {
 // MARK: - Search filter
 private extension ProductService {
     func filterProducts(searchTerm: String, products: [Product]) -> [Product] {
+        let searchTerm = searchTerm.lowercased()
         guard !searchTerm.isEmpty else { return products }
         
         return products.filter({

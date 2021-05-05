@@ -11,7 +11,7 @@ import Swinject
 struct HomeCoordinatorFactory {
     let dependencies: HomeCoordinator.Dependencies
     
-    func make(rootViewController: UIViewController) -> HomeCoordinator {
-        HomeCoordinator(dependencies: dependencies, rootViewController: rootViewController)
+    func make() -> HomeCoordinator {
+        HomeCoordinator(dependencies: dependencies)
     }
 }
