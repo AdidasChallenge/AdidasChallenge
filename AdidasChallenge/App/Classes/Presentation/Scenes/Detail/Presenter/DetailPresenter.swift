@@ -39,4 +39,8 @@ extension DetailPresenter {
     func presentReviews(reviews: [Review]) {
         displayLogic?.presentReviews(viewModel: reviewContentViewModelMapper.map(reviews: reviews))
     }
+    
+    func presentError(retryAction: (() -> Void)?) {
+        displayLogic?.presentError(retryAction: retryAction)
+    }
 }

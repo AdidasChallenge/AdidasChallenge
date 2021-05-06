@@ -48,13 +48,13 @@ extension HomeCoordinator: HomeRouterDelegate {
 
 // MARK: LaunchRoutable
 extension HomeCoordinator: DetailRouterDelegate {
-    func addReview(completion: (() -> Void)?) {
+    func addReview(productId: String, completion: (() -> Void)?) {
         self.completion = completion
         
         guard let navigationController = rootViewController as? NavigationController else { return }
         
         var formVC: UIViewController
-        formVC = dependencies.reviewFormViewControllerFactory.make(with: self, productId: "1")
+        formVC = dependencies.reviewFormViewControllerFactory.make(with: self, productId: productId)
         
         formVC.modalPresentationStyle = .formSheet
         
@@ -70,13 +70,16 @@ extension HomeCoordinator: DetailRouterDelegate {
 
 // MARK: LaunchRoutable
 extension HomeCoordinator: ReviewFormRouterDelegate {
-    func dismissReviewForm() {
+    func submitReviewForm() {
         
-        guard let navigationController = rootViewController as? NavigationController else { return }
-        
-        navigationController.popViewController(animated: true)
         completion?()
         completion = nil
+        dismissReviewForm()
+    }
+    
+    func dismissReviewForm() {
+        guard let navigationController = rootViewController as? NavigationController else { return }
         
+        navigationController.dismiss(animated: true)
     }
 }

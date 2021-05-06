@@ -9,5 +9,6 @@
 import Foundation
 
 protocol ReviewFormRouterDelegate: AnyObject {
+    func submitReviewForm()
     func dismissReviewForm()
 }

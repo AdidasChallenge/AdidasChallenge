@@ -8,5 +8,6 @@
 import Foundation
 
 protocol ReviewFormContentViewDelegate: AnyObject {
-    func didTapSubmit()
+    func didTapSubmit(text: String, rating: Int)
+    func didTapClose()
 }

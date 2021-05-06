@@ -16,3 +16,17 @@
 "search_error_cancel" = "Cancel";
 "content_detail_reviews_title" = "Recensies";
 "content_detail_add_review_title" = "Voeg een recensie toe";
+"content_detail_review_empty" = "Er zijn nog geen recensies toegevoegd. Voeg jij er een toe?";
+"review_form_submit_title" = "Verzenden";
+"review_form_comments_textfield_title" = "Je opmerkingen";
+"review_form_comments_textfield_placeholder_title" = "Ik vind de strepen leuk...";
+"review_form_rating_title" = "Beoordeling";
+"review_form_alert_confirm" = "Sluiten";
+"review_form_alert_description" = "Bedankt! We hebben je recensie ontvangen.";
+"review_form_alert_title" = "Notificatie";
+"review_form_alert_error_title" = "Recensie niet verzonden.";
+"review_form_alert_error_rating" = "Beoordeel het product u verzend.";
+"review_form_alert_error_text" = "Voeg tekst toe aan uw beoordeling.";
+"review_form_alert_error_description" = "Er is een probleem ondervonden, probeer het later nog een keer.";
+"detail_alert_error_title" = "Notification";
+"detail_alert_error_description" = "A network error occurred.";

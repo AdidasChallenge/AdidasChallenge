@@ -58,7 +58,7 @@ private extension ReviewTile {
     func setup() {
         layer.cornerRadius = 4
         layer.masksToBounds = true
-        backgroundColor = .white
+        backgroundColor = .init(hex: "F1F1F1")
         
         addSubviews(textLabel, ratingStackView)
         

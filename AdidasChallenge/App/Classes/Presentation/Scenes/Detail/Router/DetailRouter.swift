@@ -10,5 +10,5 @@ import Foundation
 
 protocol DetailRouterDelegate: AnyObject {
     func dismissDetail()
-    func addReview(completion: (() -> Void)?)
+    func addReview(productId: String, completion: (() -> Void)?)
 }

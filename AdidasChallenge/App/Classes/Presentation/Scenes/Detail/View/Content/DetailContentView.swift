@@ -152,13 +152,14 @@ private extension DetailContentView {
     
     func setupAddReviewButton() {
         addReviewButton.easy.layout(
-            Top().to(reviewList, .bottom),
+            Top(16).to(reviewList, .bottom),
             Left(16),
             Height(32),
             Bottom()
         )
         addReviewButton.setTitle("content_detail_add_review_title".localized(), for: .normal)
         addReviewButton.addTarget(self, action: #selector(didTapAddReview), for: .touchUpInside)
+        addReviewButton.titleLabel?.font = .systemFont(ofSize: 32)
     }
 }
 

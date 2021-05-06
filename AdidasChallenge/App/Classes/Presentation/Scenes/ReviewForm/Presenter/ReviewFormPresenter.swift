@@ -24,4 +24,8 @@ final class ReviewFormPresenter {
 
 // MARK: - Responses
 extension ReviewFormPresenter {
+    
+    func presentAlert(type: ResponseType) {
+        displayLogic?.displayAlert(type: type)
+    }
 }

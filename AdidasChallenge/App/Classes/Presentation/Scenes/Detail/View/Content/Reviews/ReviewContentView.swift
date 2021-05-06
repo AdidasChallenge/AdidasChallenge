@@ -14,6 +14,7 @@ final class ReviewContentView: UIView {
 
     // MARK: - UIElements
     private let titleLabel: UILabel = .init()
+    private let emptyLabel: UILabel = .init()
     lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     
     init() {
@@ -31,12 +32,15 @@ final class ReviewContentView: UIView {
 // MARK: - Setup
 private extension ReviewContentView {
     func setup() {
-        backgroundColor = .init(hex: "F1F1F1")
+        backgroundColor = .white
+        layer.masksToBounds = true
+        layer.cornerRadius = 4
         
-        addSubviews(collectionView, titleLabel)
+        addSubviews(collectionView, titleLabel, emptyLabel)
         
         setupCollectionView()
         setupTitleView()
+        setupEmptyLabel()
         
     }
     
@@ -64,8 +68,19 @@ private extension ReviewContentView {
             Right(8)
         )
         titleLabel.textColor = .black
+        titleLabel.font = .systemFont(ofSize: 24)
     }
     
+    func setupEmptyLabel() {
+        emptyLabel.easy.layout(
+            Top(16).to(titleLabel, .bottom),
+            Left(16)
+        )
+        emptyLabel.isHidden = true
+        emptyLabel.numberOfLines = 2
+        emptyLabel.text = "content_detail_review_empty".localized()
+        
+    }
 }
 
 // MARK: Updatable
@@ -83,18 +98,13 @@ extension ReviewContentView {
     }
     
     func updateCollectionView() {
-        
         collectionView.reloadData()
+        emptyLabel.isHidden = !(viewModel?.rows.isEmpty ?? true)
     }
 }
 
 // MARK: - UICollectionViewDataSource
 extension ReviewContentView: UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //guard let productId = viewModel?.rows[indexPath.row].productId else { return }
-        //delegate?.didTapReview(productId: productId)
-    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel?.rows.count ?? 0

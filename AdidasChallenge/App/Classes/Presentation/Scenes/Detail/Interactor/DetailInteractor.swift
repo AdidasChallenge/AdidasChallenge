@@ -47,7 +47,9 @@ extension DetailInteractor {
             case .success(let reviews):
                 self?.presenter?.presentReviews(reviews: reviews)
             case .failure:
-                break // TODO: Show error
+                self?.presenter?.presentError(retryAction: { [weak self] in
+                    self?.getReviews()
+                })
             }
         })
     }
@@ -57,7 +59,10 @@ extension DetailInteractor {
     }
     
     func addReview() {
-        router?.addReview(completion: { [weak self] in
+        guard let productId = product?.id else {
+            fatalError("Product Id was not set, this should not happen.")
+        }
+        router?.addReview(productId: productId, completion: { [weak self] in
             self?.getReviews()
         })
     }

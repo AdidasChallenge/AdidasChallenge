@@ -11,6 +11,7 @@ import UIKit
 protocol DetailDisplayLogic: AnyObject {
     func presentDetail(viewModel: DetailContentView.ViewModel)
     func presentReviews(viewModel: ReviewContentView.ViewModel)
+    func presentError(retryAction: (() -> Void)?)
 }
 
 // MARK: ViewController
@@ -52,6 +53,17 @@ extension DetailViewController: DetailDisplayLogic {
     
     func presentReviews(viewModel: ReviewContentView.ViewModel) {
         contentView.updateReviews(viewModel: viewModel)
+    }
+    
+    func presentError(retryAction: (() -> Void)?) {
+        let alert = UIAlertController(title: "detail_alert_error_title".localized(), message: "detail_alert_error_description".localized(), preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "search_error_cta".localized(), style: UIAlertAction.Style.default, handler: { _ in
+            retryAction?()
+        }))
+        alert.addAction(UIAlertAction(title: "search_error_cancel".localized(), style: UIAlertAction.Style.cancel, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

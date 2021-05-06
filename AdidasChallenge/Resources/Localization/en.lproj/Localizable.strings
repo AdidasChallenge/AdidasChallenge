@@ -16,3 +16,17 @@
 "search_error_cancel" = "Cancel";
 "content_detail_reviews_title" = "Reviews";
 "content_detail_add_review_title" = "Add a review";
+"content_detail_review_empty" = "No reviews have been added. Will you add a review to be the first?";
+"review_form_submit_title" = "Submit";
+"review_form_comments_textfield_title" = "Your comments";
+"review_form_comments_textfield_placeholder_title" = "I really like the stripes...";
+"review_form_rating_title" = "Rating";
+"review_form_alert_confirm" = "Close";
+"review_form_alert_description" = "Thank you! We have added your review.";
+"review_form_alert_title" = "Notification";
+"review_form_alert_error_title" = "Could not send review.";
+"review_form_alert_error_rating" = "Please assign a rating to the review.";
+"review_form_alert_error_text" = "Please add some text to the review.";
+"review_form_alert_error_description" = "An error occurred, please try again later.";
+"detail_alert_error_title" = "Notification";
+"detail_alert_error_description" = "A network error occurred.";
