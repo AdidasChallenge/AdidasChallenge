@@ -74,7 +74,8 @@ private extension ReviewContentView {
     func setupEmptyLabel() {
         emptyLabel.easy.layout(
             Top(16).to(titleLabel, .bottom),
-            Left(16)
+            Left(16),
+            Right(16)
         )
         emptyLabel.isHidden = true
         emptyLabel.numberOfLines = 2
