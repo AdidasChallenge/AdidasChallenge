@@ -8,6 +8,10 @@
 import Swinject
 import SwinjectAutoregistration
 
+import Domain
+import Data
+import Presentation
+
 public final class AppAssembly: Assembly {
     
     // MARK: Lifecycle
@@ -17,8 +21,9 @@ public final class AppAssembly: Assembly {
     public func assemble(container: Container) {
         SceneAssembly().assemble(container: container)
         CoordinatorAssembly().assemble(container: container)
+        ViewModelMapperAssembly().assemble(container: container)
         SingletonAssembly().assemble(container: container)
-        WorkerAssembly().assemble(container: container)
+        ServiceAssembly().assemble(container: container)
         MapperAssembly().assemble(container: container)
     }
 }

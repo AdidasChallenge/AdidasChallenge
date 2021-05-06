@@ -4,6 +4,7 @@ ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 source 'https://cdn.cocoapods.org/'
 
 platform :ios, '11.0'
+use_frameworks!
 
 def user_interface_pods
   # Layout
@@ -32,14 +33,10 @@ end
 
 
 target 'AdidasChallenge' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
 
   # Pods for AdidasChallenge
   injection_pods
-  user_interface_pods
   firebase_pods
-  networking_pods
   
   target 'AdidasChallengeTests' do
     inherit! :search_paths
@@ -50,4 +47,42 @@ target 'AdidasChallenge' do
     # Pods for testing
   end
 
+end
+
+# MARK: Presentation
+target 'Presentation' do
+  platform :ios, '11.0'
+  injection_pods
+  user_interface_pods
+  
+  # MARK: AppTests
+  target 'PresentationTests' do
+    inherit! :search_paths
+  end
+  
+end
+
+# MARK: Domain
+target 'Domain' do
+  platform :ios, '11.0'
+  injection_pods
+  
+  # MARK: AppTests
+  target 'DomainTests' do
+    inherit! :search_paths
+  end
+  
+end
+
+# MARK: Data
+target 'Data' do
+  platform :ios, '11.0'
+  networking_pods
+  injection_pods
+  
+  # MARK: AppTests
+  target 'DataTests' do
+    inherit! :search_paths
+  end
+  
 end
