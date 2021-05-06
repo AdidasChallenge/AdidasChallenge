@@ -6,6 +6,11 @@
 //  
 //
 
+enum LoadingStates {
+    case ready
+    case loading
+}
+
 final class HomeInteractor {
     
     // MARK: Private properties
@@ -14,6 +19,8 @@ final class HomeInteractor {
     private let productWorker: ProductWorker
     
     private var searchTerm: String = ""
+    
+    private var loadingState: LoadingStates = .ready
     
     private var products: [Product]?
     
@@ -48,6 +55,7 @@ extension HomeInteractor {
     }
     
     func searchTextDidChange(searchTerm: String) {
+        guard searchTerm != self.searchTerm else { return }
         self.searchTerm = searchTerm
         getProducts(searchTerm: searchTerm)
     }
@@ -56,8 +64,11 @@ extension HomeInteractor {
 // MARK: - Products
 private extension HomeInteractor {
     func getProducts(searchTerm: String) {
+        guard loadingState == .ready else { return }
+        loadingState = .loading
         presenter?.presentLoading(display: true)
         productWorker.getProducts(searchTerm: searchTerm, completion: { [weak self] response in
+            self?.loadingState = .ready
             switch response {
             case .success(let products):
                 self?.products = products

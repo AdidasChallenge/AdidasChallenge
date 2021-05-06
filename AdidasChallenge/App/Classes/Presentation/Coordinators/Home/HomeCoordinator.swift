@@ -46,10 +46,9 @@ extension HomeCoordinator: HomeRouterDelegate {
 // MARK: LaunchRoutable
 extension HomeCoordinator: DetailRouterDelegate {
     func dismissDetail() {
-        guard let detailVC = rootViewController?.presentedViewController as? DetailViewController else {
-            return
-        }
-        detailVC.dismiss(animated: true)
+        guard let navigationController = rootViewController as? NavigationController else { return }
+        
+        navigationController.popViewController(animated: true)
     }
 }
 

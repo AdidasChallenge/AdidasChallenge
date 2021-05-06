@@ -53,13 +53,22 @@ final class HomeViewController: UIViewController {
 // MARK: HomeDisplayLogic
 extension HomeViewController: HomeDisplayLogic {
     func displayErrorView(viewModel: ErrorView.ViewModel) {
-        contentView.errorView.update(model: viewModel)
-        contentView.errorView.isHidden = false
         displayLoading(display: false)
+        
+        let alert = UIAlertController(title: "search_error_title".localized(), message: viewModel.title, preferredStyle: UIAlertController.Style.alert)
+        
+        if viewModel.retryAction != nil {
+            alert.addAction(UIAlertAction(title: "search_error_cta".localized(), style: UIAlertAction.Style.default, handler: { _ in
+                viewModel.retryAction?()
+            }))
+        }
+        alert.addAction(UIAlertAction(title: "search_error_cancel".localized(), style: UIAlertAction.Style.cancel, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
     }
     
     func displayProducts(tiles: [ProductTile.ViewModel]) {
-        contentView.errorView.isHidden = true
         displayLoading(display: false)
         productTiles = tiles
         contentView.reloadData()
@@ -92,12 +101,8 @@ extension HomeViewController: UICollectionViewDataSource {
         productTiles?.count ?? 0
     }
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        1
-    }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    
+        
         let cell: ProductCollectionViewCell = collectionView.dequeueReusableCell(indexPath: indexPath)
         guard let productTiles = productTiles, indexPath.row < productTiles.count else {
             return UICollectionViewCell()

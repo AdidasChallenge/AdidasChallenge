@@ -10,4 +10,7 @@
 "search_no_result_description" = "We zoeken op titel en descripties.";
 "search_input_cancel" = "Annuleer";
 "search_input_placeholder" = "Zoek voor een product...";
-"search_error_title" = "We konden jouw zoekopdracht niet inladen.";
+"search_error_description" = "We could not process your search request. Please try again.";
+"search_error_title" = "Oops..";
+"search_error_cta" = "Retry";
+"search_error_cancel" = "Cancel";

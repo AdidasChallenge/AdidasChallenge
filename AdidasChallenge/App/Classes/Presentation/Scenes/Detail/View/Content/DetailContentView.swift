@@ -7,11 +7,14 @@
 
 import UIKit
 import EasyPeasy
-import Lottie
 
 final class DetailContentView: UIView {
     
-    init() {
+    private weak var delegate: DetailContentViewDelegate?
+    private(set) lazy var navigationBar: NavigationBarView = .init(delegate: self)
+    
+    init(delegate: DetailContentViewDelegate) {
+        self.delegate = delegate
         super.init(frame: .zero)
         
         setup()
@@ -21,6 +24,12 @@ final class DetailContentView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("xibs not supported")
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        navigationBar.easy.layout(Top(max(safeAreaInsets.top, 44)))
+    }
 }
 
 // MARK: - Setup
@@ -28,6 +37,18 @@ private extension DetailContentView {
     func setup() {
         backgroundColor = .init(hex: "F1F1F1")
         
+        addSubviews(navigationBar)
+        
+        setupNavigationBar()
+    }
+    
+    func setupNavigationBar() {
+        navigationBar.easy.layout(
+            Top(),
+            Left(),
+            Right(),
+            Height(44)
+        )
     }
 }
 
@@ -49,4 +70,11 @@ private extension DetailContentView {
 // MARK: Actions
 private extension DetailContentView {
     
+}
+
+// MARK: NavigationBarDelegate
+extension DetailContentView: NavigationBarDelegate {
+    func didTapBack() {
+        delegate?.didTapBack()
+    }
 }

@@ -33,4 +33,8 @@ extension DetailInteractor {
     func handleInitialize() {
         
     }
+    
+    func didTapBack() {
+        router?.dismissDetail()
+    }
 }

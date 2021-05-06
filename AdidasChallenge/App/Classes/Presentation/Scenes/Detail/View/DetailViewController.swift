@@ -17,7 +17,7 @@ final class DetailViewController: UIViewController {
     
     // MARK: Private properties
     private let interactor: DetailInteractor
-    private let contentView = DetailContentView()
+    private lazy var contentView = DetailContentView(delegate: self)
     
     private(set) var productTiles: [ProductTile.ViewModel]?
     
@@ -60,5 +60,12 @@ private extension DetailViewController {
     
     func setup() {
         
+    }
+}
+
+// MARK: DetailContentViewDelegate
+extension DetailViewController: DetailContentViewDelegate {
+    func didTapBack() {
+        interactor.didTapBack()
     }
 }

@@ -19,6 +19,9 @@
 		96235CD52642D3D2009C5AA7 /* DetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CCD2642D3D2009C5AA7 /* DetailContentView.swift */; };
 		96235CD62642D3D2009C5AA7 /* DetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CCE2642D3D2009C5AA7 /* DetailViewControllerFactory.swift */; };
 		96235CD72642D3D2009C5AA7 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CD02642D3D2009C5AA7 /* DetailAssembly.swift */; };
+		96914C652643CF8700B8B8BE /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914C642643CF8700B8B8BE /* NavigationBarView.swift */; };
+		96914C6D2643CFAB00B8B8BE /* NavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914C6C2643CFAB00B8B8BE /* NavigationBarDelegate.swift */; };
+		96914C722643D15100B8B8BE /* DetailContentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914C712643D15100B8B8BE /* DetailContentViewDelegate.swift */; };
 		969196A12641C01500F19088 /* ApplicationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196A02641C01500F19088 /* ApplicationDependencies.swift */; };
 		969196A62641C05C00F19088 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196A52641C05C00F19088 /* AppAssembly.swift */; };
 		969196AD2641C0CC00F19088 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196AC2641C0CC00F19088 /* AppCoordinator.swift */; };
@@ -114,6 +117,9 @@
 		96235CCD2642D3D2009C5AA7 /* DetailContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailContentView.swift; sourceTree = "<group>"; };
 		96235CCE2642D3D2009C5AA7 /* DetailViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewControllerFactory.swift; sourceTree = "<group>"; };
 		96235CD02642D3D2009C5AA7 /* DetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
+		96914C642643CF8700B8B8BE /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		96914C6C2643CFAB00B8B8BE /* NavigationBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarDelegate.swift; sourceTree = "<group>"; };
+		96914C712643D15100B8B8BE /* DetailContentViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentViewDelegate.swift; sourceTree = "<group>"; };
 		969196A02641C01500F19088 /* ApplicationDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDependencies.swift; sourceTree = "<group>"; };
 		969196A52641C05C00F19088 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		969196AC2641C0CC00F19088 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -294,7 +300,9 @@
 		96235CCC2642D3D2009C5AA7 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				96914C632643CF5300B8B8BE /* NavigationBar */,
 				96235CCD2642D3D2009C5AA7 /* DetailContentView.swift */,
+				96914C712643D15100B8B8BE /* DetailContentViewDelegate.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -305,6 +313,15 @@
 				96235CD02642D3D2009C5AA7 /* DetailAssembly.swift */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		96914C632643CF5300B8B8BE /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				96914C642643CF8700B8B8BE /* NavigationBarView.swift */,
+				96914C6C2643CFAB00B8B8BE /* NavigationBarDelegate.swift */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 		9691969D2641BFF300F19088 /* App */ = {
@@ -1021,6 +1038,7 @@
 				969198582642B24900F19088 /* Product.swift in Sources */,
 				969198242642936300F19088 /* SearchBarView.swift in Sources */,
 				969198412642A48400F19088 /* UIColor+Helper.swift in Sources */,
+				96914C652643CF8700B8B8BE /* NavigationBarView.swift in Sources */,
 				969196B82641C10B00F19088 /* Coordinator.swift in Sources */,
 				969196FD2641C69000F19088 /* HomePresenter.swift in Sources */,
 				969196DB2641C5A200F19088 /* HomeCoordinatorFactory.swift in Sources */,
@@ -1034,6 +1052,7 @@
 				969197272641D90000F19088 /* LaunchAssembly.swift in Sources */,
 				969198502642A8E900F19088 /* ProductService.swift in Sources */,
 				960586052642BECE00080347 /* MapperAssembly.swift in Sources */,
+				96914C722643D15100B8B8BE /* DetailContentViewDelegate.swift in Sources */,
 				969197D0264200B400F19088 /* UICollectionView+Extension.swift in Sources */,
 				9691979D2641F56800F19088 /* NoSearchResultView+ViewModel.swift in Sources */,
 				969197312641DC6C00F19088 /* SceneAssembly.swift in Sources */,
@@ -1057,6 +1076,7 @@
 				969198672642B33D00F19088 /* ProductMapper.swift in Sources */,
 				969197832641F2CB00F19088 /* UIView+Extension.swift in Sources */,
 				969196B22641C0DF00F19088 /* AppCoordinatorFactory.swift in Sources */,
+				96914C6D2643CFAB00B8B8BE /* NavigationBarDelegate.swift in Sources */,
 				9691973B2641DD4900F19088 /* CoordinatorAssembly.swift in Sources */,
 				969196C72641C21300F19088 /* NavigationController.swift in Sources */,
 				969197B32641F9EB00F19088 /* Cells+Generic.swift in Sources */,

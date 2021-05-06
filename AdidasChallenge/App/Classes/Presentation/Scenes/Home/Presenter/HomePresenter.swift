@@ -35,6 +35,6 @@ extension HomePresenter {
     }
     
     func presentError(retryAction: (() -> Void)?) {
-        displayLogic?.displayErrorView(viewModel: ErrorView.ViewModel(title: "search_error_title".localized(), retryAction: retryAction))
+        displayLogic?.displayErrorView(viewModel: ErrorView.ViewModel(title: "search_error_description".localized(), retryAction: retryAction))
     }
 }
