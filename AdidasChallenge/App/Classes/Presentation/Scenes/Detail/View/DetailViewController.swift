@@ -9,7 +9,8 @@
 import UIKit
 
 protocol DetailDisplayLogic: AnyObject {
-    
+    func presentDetail(viewModel: DetailContentView.ViewModel)
+    func presentReviews(viewModel: ReviewContentView.ViewModel)
 }
 
 // MARK: ViewController
@@ -17,6 +18,7 @@ final class DetailViewController: UIViewController {
     
     // MARK: Private properties
     private let interactor: DetailInteractor
+    
     private lazy var contentView = DetailContentView(delegate: self)
     
     private(set) var productTiles: [ProductTile.ViewModel]?
@@ -35,36 +37,30 @@ final class DetailViewController: UIViewController {
         view = contentView
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        setup()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         interactor.handleInitialize()
-        
-        navigationController?.navigationBar.isHidden = true
     }
 }
 
 // MARK: DetailDisplayLogic
 extension DetailViewController: DetailDisplayLogic {
+    func presentDetail(viewModel: DetailContentView.ViewModel) {
+        contentView.update(model: viewModel)
+    }
     
-}
-
-// MARK: Private setup methods
-private extension DetailViewController {
-    
-    func setup() {
-        
+    func presentReviews(viewModel: ReviewContentView.ViewModel) {
+        contentView.updateReviews(viewModel: viewModel)
     }
 }
 
 // MARK: DetailContentViewDelegate
 extension DetailViewController: DetailContentViewDelegate {
+    func didTapAddReview() {
+        interactor.addReview()
+    }
+    
     func didTapBack() {
         interactor.didTapBack()
     }

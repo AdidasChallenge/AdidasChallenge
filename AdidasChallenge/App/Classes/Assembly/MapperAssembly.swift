@@ -17,9 +17,12 @@ final class MapperAssembly: Assembly {
         
         // MARK: - Entity mappers
         container.autoregister(ProductEntityMapper.self, initializer: ProductEntityMapper.init)
+        container.autoregister(ReviewEntityMapper.self, initializer: ReviewEntityMapper.init)
         
         // MARK: - ViewModel Mappers
         container.autoregister(ProductViewModelMapper.self, initializer: ProductViewModelMapper.init)
+        container.autoregister(ContentDetailViewModelMapper.self, initializer: ContentDetailViewModelMapper.init)
+        container.autoregister(ReviewContentViewModelMapper.self, initializer: ReviewContentViewModelMapper.init)
         
     }
 }

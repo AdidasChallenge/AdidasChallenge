@@ -15,6 +15,6 @@ final class WorkerAssembly: Assembly {
     // MARK: Internal methods
     func assemble(container: Container) {
         container.autoregister(ProductWorker.self, initializer: ProductService.init)
-        
+        container.autoregister(ReviewWorker.self, initializer: ReviewService.init)
     }
 }

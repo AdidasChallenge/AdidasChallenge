@@ -9,4 +9,5 @@ import Foundation
 
 protocol DetailContentViewDelegate: AnyObject {
     func didTapBack()
+    func didTapAddReview()
 }

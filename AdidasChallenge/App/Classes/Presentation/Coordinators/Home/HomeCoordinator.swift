@@ -14,6 +14,8 @@ final class HomeCoordinator: Coordinator {
     private var navigationController: UINavigationController?
     private var childCoordinator: Coordinator?
     
+    private var completion: (() -> Void)?
+    
     init(dependencies: Dependencies) {
         self.dependencies = dependencies
     }
@@ -43,8 +45,22 @@ extension HomeCoordinator: HomeRouterDelegate {
         navigationController.pushViewController(detailVC, animated: true)
     }
 }
+
 // MARK: LaunchRoutable
 extension HomeCoordinator: DetailRouterDelegate {
+    func addReview(completion: (() -> Void)?) {
+        self.completion = completion
+        
+        guard let navigationController = rootViewController as? NavigationController else { return }
+        
+        var formVC: UIViewController
+        formVC = dependencies.reviewFormViewControllerFactory.make(with: self, productId: "1")
+        
+        formVC.modalPresentationStyle = .formSheet
+        
+        navigationController.present(formVC, animated: true)
+    }
+    
     func dismissDetail() {
         guard let navigationController = rootViewController as? NavigationController else { return }
         
@@ -52,3 +68,15 @@ extension HomeCoordinator: DetailRouterDelegate {
     }
 }
 
+// MARK: LaunchRoutable
+extension HomeCoordinator: ReviewFormRouterDelegate {
+    func dismissReviewForm() {
+        
+        guard let navigationController = rootViewController as? NavigationController else { return }
+        
+        navigationController.popViewController(animated: true)
+        completion?()
+        completion = nil
+        
+    }
+}

@@ -11,6 +11,7 @@ import EasyPeasy
 final class NavigationBarView: UIView {
     
     private weak var delegate: NavigationBarDelegate?
+    private(set) var navigationBarHeight: CGFloat = 44
     
     // MARK: UIElements
     private let backButton: UIButton = .init(type: .custom)
@@ -45,15 +46,15 @@ private extension NavigationBarView {
     func setupBackButton() {
         backButton.easy.layout(
             Left(16),
-            CenterY(),
-            Size(32)
+            Bottom(8),
+            Size(24)
         )
         
         let image = UIImage(named: "back")?.withRenderingMode(.alwaysTemplate)
         backButton.setImage(image, for: .normal)
         backButton.setImage(image, for: .selected)
         backButton.setImage(image, for: .highlighted)
-        backButton.imageView?.contentMode = .center
+        backButton.imageView?.contentMode = .scaleAspectFit
         backButton.tintColor = .black
         backButton.addTarget(self, action: #selector(didTapBack), for: .touchUpInside)
     }

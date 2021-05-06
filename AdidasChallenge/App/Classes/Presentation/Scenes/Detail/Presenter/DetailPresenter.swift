@@ -12,8 +12,16 @@ final class DetailPresenter {
     
     // MARK: private properties
     private weak var displayLogic: DetailDisplayLogic?
-    init() {
-        
+    
+    private let contentDetailViewModelMapper: ContentDetailViewModelMapper
+    private let reviewContentViewModelMapper: ReviewContentViewModelMapper
+    
+    init(
+        contentDetailViewModelMapper: ContentDetailViewModelMapper,
+        reviewContentViewModelMapper: ReviewContentViewModelMapper
+    ) {
+        self.contentDetailViewModelMapper = contentDetailViewModelMapper
+        self.reviewContentViewModelMapper = reviewContentViewModelMapper
     }
     
     func setup(with displayLogic: DetailDisplayLogic?) {
@@ -23,4 +31,12 @@ final class DetailPresenter {
 
 // MARK: - Responses
 extension DetailPresenter {
+    
+    func presentDetail(product: Product) {
+        displayLogic?.presentDetail(viewModel: contentDetailViewModelMapper.map(product: product))
+    }
+    
+    func presentReviews(reviews: [Review]) {
+        displayLogic?.presentReviews(viewModel: reviewContentViewModelMapper.map(reviews: reviews))
+    }
 }

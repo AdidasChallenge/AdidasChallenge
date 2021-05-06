@@ -9,5 +9,6 @@ extension HomeCoordinator {
     struct Dependencies {
         let homeViewControllerFactory: HomeViewControllerFactory
         let detailViewControllerFactory: DetailViewControllerFactory
+        let reviewFormViewControllerFactory: ReviewFormViewControllerFactory
     }
 }

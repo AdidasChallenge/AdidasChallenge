@@ -16,7 +16,8 @@ public final class SceneAssembly: Assembly {
     let assemblies: [Assembly] = [
         LaunchAssembly(),
         HomeAssembly(),
-        DetailAssembly()
+        DetailAssembly(),
+        ReviewFormAssembly()
     ]
     
     // MARK: Public methods

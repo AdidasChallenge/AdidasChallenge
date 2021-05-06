@@ -12,10 +12,13 @@ final class DetailInteractor {
     private var presenter: DetailPresenter?
     private var router: DetailRouterDelegate?
     
+    private let reviewWorker: ReviewWorker
     private var product: Product?
     
     // MARK: Lifecycle
-    init() { }
+    init(reviewWorker: ReviewWorker) {
+        self.reviewWorker = reviewWorker
+    }
     
     // MARK: Internal methods
     func setup(with presenter: DetailPresenter,
@@ -31,10 +34,31 @@ final class DetailInteractor {
 extension DetailInteractor {
     
     func handleInitialize() {
+        guard let product = product else { return }
+        presenter?.presentDetail(product: product)
         
+        getReviews()
+    }
+    
+    private func getReviews() {
+        guard let product = product else { return }
+        reviewWorker.getReviewsFor(id: product.id, completion: { [weak self] result in
+            switch result {
+            case .success(let reviews):
+                self?.presenter?.presentReviews(reviews: reviews)
+            case .failure:
+                break // TODO: Show error
+            }
+        })
     }
     
     func didTapBack() {
         router?.dismissDetail()
+    }
+    
+    func addReview() {
+        router?.addReview(completion: { [weak self] in
+            self?.getReviews()
+        })
     }
 }

@@ -19,9 +19,30 @@
 		96235CD52642D3D2009C5AA7 /* DetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CCD2642D3D2009C5AA7 /* DetailContentView.swift */; };
 		96235CD62642D3D2009C5AA7 /* DetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CCE2642D3D2009C5AA7 /* DetailViewControllerFactory.swift */; };
 		96235CD72642D3D2009C5AA7 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96235CD02642D3D2009C5AA7 /* DetailAssembly.swift */; };
+		96279F262644053B00A3CA83 /* ContentDetailViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F252644053B00A3CA83 /* ContentDetailViewModelMapper.swift */; };
+		96279F2B264405EE00A3CA83 /* ReviewContentViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F2A264405EE00A3CA83 /* ReviewContentViewModelMapper.swift */; };
+		96279F362644094700A3CA83 /* ReviewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F352644094700A3CA83 /* ReviewWorker.swift */; };
+		96279F3E2644095400A3CA83 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F3D2644095400A3CA83 /* ReviewService.swift */; };
+		96279F8C2644407A00A3CA83 /* ReviewFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F802644407900A3CA83 /* ReviewFormPresenter.swift */; };
+		96279F8D2644407A00A3CA83 /* ReviewFormAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F822644407A00A3CA83 /* ReviewFormAssembly.swift */; };
+		96279F8E2644407A00A3CA83 /* ReviewFormViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F842644407A00A3CA83 /* ReviewFormViewControllerFactory.swift */; };
+		96279F8F2644407A00A3CA83 /* ReviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F852644407A00A3CA83 /* ReviewFormViewController.swift */; };
+		96279F902644407A00A3CA83 /* ReviewFormContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F872644407A00A3CA83 /* ReviewFormContentView.swift */; };
+		96279F912644407A00A3CA83 /* ReviewFormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F892644407A00A3CA83 /* ReviewFormRouter.swift */; };
+		96279F922644407A00A3CA83 /* ReviewFormInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F8B2644407A00A3CA83 /* ReviewFormInteractor.swift */; };
+		96279F972644418600A3CA83 /* ReviewFormContentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96279F962644418600A3CA83 /* ReviewFormContentViewDelegate.swift */; };
 		96914C652643CF8700B8B8BE /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914C642643CF8700B8B8BE /* NavigationBarView.swift */; };
 		96914C6D2643CFAB00B8B8BE /* NavigationBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914C6C2643CFAB00B8B8BE /* NavigationBarDelegate.swift */; };
 		96914C722643D15100B8B8BE /* DetailContentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914C712643D15100B8B8BE /* DetailContentViewDelegate.swift */; };
+		96914CA22643EA0300B8B8BE /* DetailContentView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914CA12643EA0300B8B8BE /* DetailContentView+ViewModel.swift */; };
+		96914CA72643EC0800B8B8BE /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914CA62643EC0800B8B8BE /* Review.swift */; };
+		96914CAC2643EC6400B8B8BE /* ReviewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914CAB2643EC6400B8B8BE /* ReviewEntity.swift */; };
+		96914CB12643EC9300B8B8BE /* ReviewMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914CB02643EC9300B8B8BE /* ReviewMapper.swift */; };
+		96914CB82643EF7500B8B8BE /* ReviewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914CB72643EF7500B8B8BE /* ReviewContentView.swift */; };
+		96914CC52643EF9000B8B8BE /* ReviewContentView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914CC42643EF9000B8B8BE /* ReviewContentView+ViewModel.swift */; };
+		96914CCA2643F00200B8B8BE /* ReviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914CC92643F00200B8B8BE /* ReviewCollectionViewCell.swift */; };
+		96914CCF2643F00F00B8B8BE /* ReviewTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914CCE2643F00F00B8B8BE /* ReviewTile.swift */; };
+		96914CD42643F01800B8B8BE /* ReviewTile+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914CD32643F01800B8B8BE /* ReviewTile+ViewModel.swift */; };
 		969196A12641C01500F19088 /* ApplicationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196A02641C01500F19088 /* ApplicationDependencies.swift */; };
 		969196A62641C05C00F19088 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196A52641C05C00F19088 /* AppAssembly.swift */; };
 		969196AD2641C0CC00F19088 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196AC2641C0CC00F19088 /* AppCoordinator.swift */; };
@@ -117,9 +138,30 @@
 		96235CCD2642D3D2009C5AA7 /* DetailContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailContentView.swift; sourceTree = "<group>"; };
 		96235CCE2642D3D2009C5AA7 /* DetailViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewControllerFactory.swift; sourceTree = "<group>"; };
 		96235CD02642D3D2009C5AA7 /* DetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
+		96279F252644053B00A3CA83 /* ContentDetailViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailViewModelMapper.swift; sourceTree = "<group>"; };
+		96279F2A264405EE00A3CA83 /* ReviewContentViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewContentViewModelMapper.swift; sourceTree = "<group>"; };
+		96279F352644094700A3CA83 /* ReviewWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWorker.swift; sourceTree = "<group>"; };
+		96279F3D2644095400A3CA83 /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		96279F802644407900A3CA83 /* ReviewFormPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewFormPresenter.swift; sourceTree = "<group>"; };
+		96279F822644407A00A3CA83 /* ReviewFormAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewFormAssembly.swift; sourceTree = "<group>"; };
+		96279F842644407A00A3CA83 /* ReviewFormViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewFormViewControllerFactory.swift; sourceTree = "<group>"; };
+		96279F852644407A00A3CA83 /* ReviewFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewFormViewController.swift; sourceTree = "<group>"; };
+		96279F872644407A00A3CA83 /* ReviewFormContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewFormContentView.swift; sourceTree = "<group>"; };
+		96279F892644407A00A3CA83 /* ReviewFormRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewFormRouter.swift; sourceTree = "<group>"; };
+		96279F8B2644407A00A3CA83 /* ReviewFormInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewFormInteractor.swift; sourceTree = "<group>"; };
+		96279F962644418600A3CA83 /* ReviewFormContentViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormContentViewDelegate.swift; sourceTree = "<group>"; };
 		96914C642643CF8700B8B8BE /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		96914C6C2643CFAB00B8B8BE /* NavigationBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarDelegate.swift; sourceTree = "<group>"; };
 		96914C712643D15100B8B8BE /* DetailContentViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentViewDelegate.swift; sourceTree = "<group>"; };
+		96914CA12643EA0300B8B8BE /* DetailContentView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailContentView+ViewModel.swift"; sourceTree = "<group>"; };
+		96914CA62643EC0800B8B8BE /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		96914CAB2643EC6400B8B8BE /* ReviewEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewEntity.swift; sourceTree = "<group>"; };
+		96914CB02643EC9300B8B8BE /* ReviewMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewMapper.swift; sourceTree = "<group>"; };
+		96914CB72643EF7500B8B8BE /* ReviewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewContentView.swift; sourceTree = "<group>"; };
+		96914CC42643EF9000B8B8BE /* ReviewContentView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReviewContentView+ViewModel.swift"; sourceTree = "<group>"; };
+		96914CC92643F00200B8B8BE /* ReviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		96914CCE2643F00F00B8B8BE /* ReviewTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTile.swift; sourceTree = "<group>"; };
+		96914CD32643F01800B8B8BE /* ReviewTile+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReviewTile+ViewModel.swift"; sourceTree = "<group>"; };
 		969196A02641C01500F19088 /* ApplicationDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDependencies.swift; sourceTree = "<group>"; };
 		969196A52641C05C00F19088 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		969196AC2641C0CC00F19088 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -247,6 +289,8 @@
 			isa = PBXGroup;
 			children = (
 				9605860C2642C02600080347 /* ProductViewModelMapper.swift */,
+				96279F252644053B00A3CA83 /* ContentDetailViewModelMapper.swift */,
+				96279F2A264405EE00A3CA83 /* ReviewContentViewModelMapper.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -300,9 +344,11 @@
 		96235CCC2642D3D2009C5AA7 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				96914CB62643EF6400B8B8BE /* Reviews */,
 				96914C632643CF5300B8B8BE /* NavigationBar */,
 				96235CCD2642D3D2009C5AA7 /* DetailContentView.swift */,
 				96914C712643D15100B8B8BE /* DetailContentViewDelegate.swift */,
+				96914CA12643EA0300B8B8BE /* DetailContentView+ViewModel.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -315,6 +361,69 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
+		96279F7D26443EEB00A3CA83 /* ReviewForm */ = {
+			isa = PBXGroup;
+			children = (
+				96279F812644407A00A3CA83 /* Assembly */,
+				96279F8A2644407A00A3CA83 /* Interactor */,
+				96279F7F2644407900A3CA83 /* Presenter */,
+				96279F882644407A00A3CA83 /* Router */,
+				96279F832644407A00A3CA83 /* View */,
+			);
+			path = ReviewForm;
+			sourceTree = "<group>";
+		};
+		96279F7F2644407900A3CA83 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				96279F802644407900A3CA83 /* ReviewFormPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		96279F812644407A00A3CA83 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				96279F822644407A00A3CA83 /* ReviewFormAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		96279F832644407A00A3CA83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96279F842644407A00A3CA83 /* ReviewFormViewControllerFactory.swift */,
+				96279F852644407A00A3CA83 /* ReviewFormViewController.swift */,
+				96279F862644407A00A3CA83 /* Content */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96279F862644407A00A3CA83 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				96279F872644407A00A3CA83 /* ReviewFormContentView.swift */,
+				96279F962644418600A3CA83 /* ReviewFormContentViewDelegate.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		96279F882644407A00A3CA83 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				96279F892644407A00A3CA83 /* ReviewFormRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		96279F8A2644407A00A3CA83 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				96279F8B2644407A00A3CA83 /* ReviewFormInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		96914C632643CF5300B8B8BE /* NavigationBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +431,26 @@
 				96914C6C2643CFAB00B8B8BE /* NavigationBarDelegate.swift */,
 			);
 			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		96914CB52643EF4F00B8B8BE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				96914CC92643F00200B8B8BE /* ReviewCollectionViewCell.swift */,
+				96914CCE2643F00F00B8B8BE /* ReviewTile.swift */,
+				96914CD32643F01800B8B8BE /* ReviewTile+ViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		96914CB62643EF6400B8B8BE /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				96914CB52643EF4F00B8B8BE /* Cells */,
+				96914CB72643EF7500B8B8BE /* ReviewContentView.swift */,
+				96914CC42643EF9000B8B8BE /* ReviewContentView+ViewModel.swift */,
+			);
+			path = Reviews;
 			sourceTree = "<group>";
 		};
 		9691969D2641BFF300F19088 /* App */ = {
@@ -370,6 +499,7 @@
 		969196AB2641C0AC00F19088 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				96279F7D26443EEB00A3CA83 /* ReviewForm */,
 				96235CC02642D363009C5AA7 /* Detail */,
 				969197052641D46C00F19088 /* Launch */,
 				969196DF2641C5C700F19088 /* Home */,
@@ -666,6 +796,7 @@
 			isa = PBXGroup;
 			children = (
 				969198472642A8DE00F19088 /* ProductWorker.swift */,
+				96279F352644094700A3CA83 /* ReviewWorker.swift */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -674,6 +805,7 @@
 			isa = PBXGroup;
 			children = (
 				9691984F2642A8E900F19088 /* ProductService.swift */,
+				96279F3D2644095400A3CA83 /* ReviewService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -701,6 +833,7 @@
 			isa = PBXGroup;
 			children = (
 				969198572642B24900F19088 /* Product.swift */,
+				96914CA62643EC0800B8B8BE /* Review.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -709,6 +842,7 @@
 			isa = PBXGroup;
 			children = (
 				9691985D2642B2CA00F19088 /* ProductEntity.swift */,
+				96914CAB2643EC6400B8B8BE /* ReviewEntity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -717,6 +851,7 @@
 			isa = PBXGroup;
 			children = (
 				969198662642B33D00F19088 /* ProductMapper.swift */,
+				96914CB02643EC9300B8B8BE /* ReviewMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -1022,6 +1157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96279F8C2644407A00A3CA83 /* ReviewFormPresenter.swift in Sources */,
+				96914CAC2643EC6400B8B8BE /* ReviewEntity.swift in Sources */,
+				96279F3E2644095400A3CA83 /* ReviewService.swift in Sources */,
 				96235CD52642D3D2009C5AA7 /* DetailContentView.swift in Sources */,
 				969196D62641C59700F19088 /* HomeCoordinator+Dependencies.swift in Sources */,
 				96235CD12642D3D2009C5AA7 /* DetailInteractor.swift in Sources */,
@@ -1031,15 +1169,21 @@
 				969198032642883500F19088 /* UIEdgeInsets+Extension.swift in Sources */,
 				9691972C2641DB7400F19088 /* LaunchViewControllerFactory.swift in Sources */,
 				969197152641D8CA00F19088 /* LaunchRouter.swift in Sources */,
+				96914CCA2643F00200B8B8BE /* ReviewCollectionViewCell.swift in Sources */,
+				96279F8E2644407A00A3CA83 /* ReviewFormViewControllerFactory.swift in Sources */,
+				96279F922644407A00A3CA83 /* ReviewFormInteractor.swift in Sources */,
 				969197362641DD1600F19088 /* SingletonAssembly.swift in Sources */,
 				969196C02641C13F00F19088 /* AppCoordinator+Dependencies.swift in Sources */,
 				96235CD62642D3D2009C5AA7 /* DetailViewControllerFactory.swift in Sources */,
 				96235CD42642D3D2009C5AA7 /* DetailViewController.swift in Sources */,
+				96914CA22643EA0300B8B8BE /* DetailContentView+ViewModel.swift in Sources */,
 				969198582642B24900F19088 /* Product.swift in Sources */,
 				969198242642936300F19088 /* SearchBarView.swift in Sources */,
 				969198412642A48400F19088 /* UIColor+Helper.swift in Sources */,
+				96914CA72643EC0800B8B8BE /* Review.swift in Sources */,
 				96914C652643CF8700B8B8BE /* NavigationBarView.swift in Sources */,
 				969196B82641C10B00F19088 /* Coordinator.swift in Sources */,
+				96279F972644418600A3CA83 /* ReviewFormContentViewDelegate.swift in Sources */,
 				969196FD2641C69000F19088 /* HomePresenter.swift in Sources */,
 				969196DB2641C5A200F19088 /* HomeCoordinatorFactory.swift in Sources */,
 				969197AD2641F96900F19088 /* ProductTile.swift in Sources */,
@@ -1053,14 +1197,21 @@
 				969198502642A8E900F19088 /* ProductService.swift in Sources */,
 				960586052642BECE00080347 /* MapperAssembly.swift in Sources */,
 				96914C722643D15100B8B8BE /* DetailContentViewDelegate.swift in Sources */,
+				96914CCF2643F00F00B8B8BE /* ReviewTile.swift in Sources */,
 				969197D0264200B400F19088 /* UICollectionView+Extension.swift in Sources */,
+				96279F8F2644407A00A3CA83 /* ReviewFormViewController.swift in Sources */,
 				9691979D2641F56800F19088 /* NoSearchResultView+ViewModel.swift in Sources */,
 				969197312641DC6C00F19088 /* SceneAssembly.swift in Sources */,
 				9691983C2642962600F19088 /* UIButton+Extension.swift in Sources */,
 				96235CD32642D3D2009C5AA7 /* DetailPresenter.swift in Sources */,
+				96279F912644407A00A3CA83 /* ReviewFormRouter.swift in Sources */,
+				96914CD42643F01800B8B8BE /* ReviewTile+ViewModel.swift in Sources */,
 				96919834264293B900F19088 /* SearchBarViewDelegate.swift in Sources */,
+				96914CC52643EF9000B8B8BE /* ReviewContentView+ViewModel.swift in Sources */,
+				96279F902644407A00A3CA83 /* ReviewFormContentView.swift in Sources */,
 				969197742641F18A00F19088 /* ErrorView.swift in Sources */,
 				969198482642A8DE00F19088 /* ProductWorker.swift in Sources */,
+				96279F2B264405EE00A3CA83 /* ReviewContentViewModelMapper.swift in Sources */,
 				969196FF2641C69000F19088 /* HomeRouter.swift in Sources */,
 				96235CD22642D3D2009C5AA7 /* DetailRouter.swift in Sources */,
 				969197472641E9DC00F19088 /* HomeContentView.swift in Sources */,
@@ -1073,18 +1224,23 @@
 				969197C62641FDD600F19088 /* UIStackView+Extension.swift in Sources */,
 				9691982C2642939400F19088 /* SearchTextField.swift in Sources */,
 				9691981E2642900300F19088 /* UIImageView+Extension.swift in Sources */,
+				96279F262644053B00A3CA83 /* ContentDetailViewModelMapper.swift in Sources */,
 				969198672642B33D00F19088 /* ProductMapper.swift in Sources */,
 				969197832641F2CB00F19088 /* UIView+Extension.swift in Sources */,
 				969196B22641C0DF00F19088 /* AppCoordinatorFactory.swift in Sources */,
 				96914C6D2643CFAB00B8B8BE /* NavigationBarDelegate.swift in Sources */,
 				9691973B2641DD4900F19088 /* CoordinatorAssembly.swift in Sources */,
 				969196C72641C21300F19088 /* NavigationController.swift in Sources */,
+				96279F362644094700A3CA83 /* ReviewWorker.swift in Sources */,
 				969197B32641F9EB00F19088 /* Cells+Generic.swift in Sources */,
+				96279F8D2644407A00A3CA83 /* ReviewFormAssembly.swift in Sources */,
 				969197012641C69000F19088 /* HomeViewControllerFactory.swift in Sources */,
 				969196A12641C01500F19088 /* ApplicationDependencies.swift in Sources */,
 				969197222641D8F500F19088 /* LaunchInteractor.swift in Sources */,
+				96914CB12643EC9300B8B8BE /* ReviewMapper.swift in Sources */,
 				969196D12641C31C00F19088 /* HomeCoordinator.swift in Sources */,
 				969197A82641F92D00F19088 /* ProductCollectionViewCell.swift in Sources */,
+				96914CB82643EF7500B8B8BE /* ReviewContentView.swift in Sources */,
 				969196FC2641C69000F19088 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

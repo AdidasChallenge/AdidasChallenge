@@ -14,3 +14,5 @@
 "search_error_title" = "Oops..";
 "search_error_cta" = "Retry";
 "search_error_cancel" = "Cancel";
+"content_detail_reviews_title" = "Reviews";
+"content_detail_add_review_title" = "Add a review";
