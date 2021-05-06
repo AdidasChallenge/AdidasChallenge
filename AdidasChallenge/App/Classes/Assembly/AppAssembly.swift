@@ -19,11 +19,9 @@ public final class AppAssembly: Assembly {
     
     // MARK: Public methods
     public func assemble(container: Container) {
-        SceneAssembly().assemble(container: container)
-        CoordinatorAssembly().assemble(container: container)
-        ViewModelMapperAssembly().assemble(container: container)
-        SingletonAssembly().assemble(container: container)
-        ServiceAssembly().assemble(container: container)
-        MapperAssembly().assemble(container: container)
+        TargetAssembly().assemble(container: container)
+        Presentation.TargetAssembly().assemble(container: container)
+        DataAssembly().assemble(container: container)
+        
     }
 }

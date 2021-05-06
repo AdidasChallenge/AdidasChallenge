@@ -13,17 +13,14 @@
 		7BFD951AB219E6B895C268D7 /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381704096C5A5FAA332F3DD6 /* Pods_Data.framework */; };
 		8DCE906A6EF429F2DE88DB53 /* Pods_AdidasChallenge_AdidasChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774FF7D9B33055066F4033FD /* Pods_AdidasChallenge_AdidasChallengeUITests.framework */; };
 		9627A02726449FB900A3CA83 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627A01E26449FB900A3CA83 /* Presentation.framework */; };
-		9627A02E26449FB900A3CA83 /* PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A02D26449FB900A3CA83 /* PresentationTests.swift */; };
 		9627A03026449FB900A3CA83 /* Presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9627A02026449FB900A3CA83 /* Presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9627A03326449FB900A3CA83 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627A01E26449FB900A3CA83 /* Presentation.framework */; };
 		9627A03426449FB900A3CA83 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9627A01E26449FB900A3CA83 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9627A04D26449FC300A3CA83 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627A04426449FC300A3CA83 /* Domain.framework */; };
-		9627A05426449FC400A3CA83 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A05326449FC400A3CA83 /* DomainTests.swift */; };
 		9627A05626449FC400A3CA83 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 9627A04626449FC300A3CA83 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9627A05926449FC400A3CA83 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627A04426449FC300A3CA83 /* Domain.framework */; };
 		9627A05A26449FC400A3CA83 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9627A04426449FC300A3CA83 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9627A07526449FCA00A3CA83 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627A06C26449FCA00A3CA83 /* Data.framework */; };
-		9627A07C26449FCA00A3CA83 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A07B26449FCA00A3CA83 /* DataTests.swift */; };
 		9627A07E26449FCA00A3CA83 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 9627A06E26449FCA00A3CA83 /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9627A08126449FCA00A3CA83 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627A06C26449FCA00A3CA83 /* Data.framework */; };
 		9627A08226449FCA00A3CA83 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9627A06C26449FCA00A3CA83 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -109,6 +106,15 @@
 		9627A1E02644A39B00A3CA83 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960585FF2642BE9400080347 /* ServiceAssembly.swift */; };
 		9627A1E12644A39B00A3CA83 /* ReviewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96914CAB2643EC6400B8B8BE /* ReviewEntity.swift */; };
 		9627A20B2644A59600A3CA83 /* ViewModelMapperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A20A2644A59600A3CA83 /* ViewModelMapperAssembly.swift */; };
+		9627A2C52644AF3D00A3CA83 /* SceneAssemblyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A2C42644AF3D00A3CA83 /* SceneAssemblyTest.swift */; };
+		9627A2DF2644AFE900A3CA83 /* TargetAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A2DE2644AFE900A3CA83 /* TargetAssembly.swift */; };
+		9627A2E92644B0D200A3CA83 /* DataAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A2E82644B0D200A3CA83 /* DataAssembly.swift */; };
+		9627A2F32644B10900A3CA83 /* TargetAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A2F22644B10900A3CA83 /* TargetAssembly.swift */; };
+		9627A3BF2644B5DA00A3CA83 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A3BE2644B5DA00A3CA83 /* DataTests.swift */; };
+		9627A3D12644B5EC00A3CA83 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A3D02644B5EC00A3CA83 /* DomainTests.swift */; };
+		9627A3DB2644B5F300A3CA83 /* PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A3DA2644B5F300A3CA83 /* PresentationTests.swift */; };
+		9627A3ED2644B60100A3CA83 /* AdidasChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A3EC2644B60100A3CA83 /* AdidasChallengeUITests.swift */; };
+		9627A3F72644B60900A3CA83 /* AdidasChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627A3F62644B60900A3CA83 /* AdidasChallengeTests.swift */; };
 		969196A12641C01500F19088 /* ApplicationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196A02641C01500F19088 /* ApplicationDependencies.swift */; };
 		969196A62641C05C00F19088 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969196A52641C05C00F19088 /* AppAssembly.swift */; };
 		969197362641DD1600F19088 /* SingletonAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969197352641DD1600F19088 /* SingletonAssembly.swift */; };
@@ -118,8 +124,6 @@
 		96CE6AC32641A25800E73788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE6AC22641A25800E73788 /* AppDelegate.swift */; };
 		96CE6ACC2641A25A00E73788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CE6ACB2641A25A00E73788 /* Assets.xcassets */; };
 		96CE6ACF2641A25A00E73788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE6ACD2641A25A00E73788 /* LaunchScreen.storyboard */; };
-		96CE6ADA2641A25A00E73788 /* AdidasChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE6AD92641A25A00E73788 /* AdidasChallengeTests.swift */; };
-		96CE6AE52641A25A00E73788 /* AdidasChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE6AE42641A25A00E73788 /* AdidasChallengeUITests.swift */; };
 		9BAB589404C06A499431AEFA /* Pods_DataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7E0F646A49F338A32CF52A /* Pods_DataTests.framework */; };
 		B17AAFC9F5A86E97A20F061F /* Pods_AdidasChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB819DABD0C46706D4C9F88 /* Pods_AdidasChallengeTests.framework */; };
 		BB9748DD504D55C20832403C /* Pods_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729971A097FC686FD8B8349E /* Pods_DomainTests.framework */; };
@@ -264,27 +268,31 @@
 		96279F892644407A00A3CA83 /* ReviewFormRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewFormRouter.swift; sourceTree = "<group>"; };
 		96279F8B2644407A00A3CA83 /* ReviewFormInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewFormInteractor.swift; sourceTree = "<group>"; };
 		96279F962644418600A3CA83 /* ReviewFormContentViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormContentViewDelegate.swift; sourceTree = "<group>"; };
-		96279FF326449F8E00A3CA83 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
 		96279FF526449F8E00A3CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9627A01E26449FB900A3CA83 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9627A02026449FB900A3CA83 /* Presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
 		9627A02126449FB900A3CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9627A02626449FB900A3CA83 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9627A02D26449FB900A3CA83 /* PresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTests.swift; sourceTree = "<group>"; };
 		9627A02F26449FB900A3CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9627A04426449FC300A3CA83 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9627A04626449FC300A3CA83 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		9627A04726449FC300A3CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9627A04C26449FC300A3CA83 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9627A05326449FC400A3CA83 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
 		9627A05526449FC400A3CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9627A06C26449FCA00A3CA83 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9627A06E26449FCA00A3CA83 /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		9627A06F26449FCA00A3CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9627A07426449FCA00A3CA83 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9627A07B26449FCA00A3CA83 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
-		9627A07D26449FCA00A3CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9627A20A2644A59600A3CA83 /* ViewModelMapperAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelMapperAssembly.swift; sourceTree = "<group>"; };
+		9627A2C42644AF3D00A3CA83 /* SceneAssemblyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneAssemblyTest.swift; sourceTree = "<group>"; };
+		9627A2DE2644AFE900A3CA83 /* TargetAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetAssembly.swift; sourceTree = "<group>"; };
+		9627A2E82644B0D200A3CA83 /* DataAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAssembly.swift; sourceTree = "<group>"; };
+		9627A2F22644B10900A3CA83 /* TargetAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetAssembly.swift; sourceTree = "<group>"; };
+		9627A3BE2644B5DA00A3CA83 /* DataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
+		9627A3D02644B5EC00A3CA83 /* DomainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		9627A3DA2644B5F300A3CA83 /* PresentationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationTests.swift; sourceTree = "<group>"; };
+		9627A3EC2644B60100A3CA83 /* AdidasChallengeUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdidasChallengeUITests.swift; sourceTree = "<group>"; };
+		9627A3F62644B60900A3CA83 /* AdidasChallengeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdidasChallengeTests.swift; sourceTree = "<group>"; };
 		96914C642643CF8700B8B8BE /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		96914C6C2643CFAB00B8B8BE /* NavigationBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarDelegate.swift; sourceTree = "<group>"; };
 		96914C712643D15100B8B8BE /* DetailContentViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentViewDelegate.swift; sourceTree = "<group>"; };
@@ -356,10 +364,8 @@
 		96CE6ACE2641A25A00E73788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96CE6AD02641A25A00E73788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96CE6AD52641A25A00E73788 /* AdidasChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdidasChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		96CE6AD92641A25A00E73788 /* AdidasChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdidasChallengeTests.swift; sourceTree = "<group>"; };
 		96CE6ADB2641A25A00E73788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96CE6AE02641A25A00E73788 /* AdidasChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdidasChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		96CE6AE42641A25A00E73788 /* AdidasChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdidasChallengeUITests.swift; sourceTree = "<group>"; };
 		96CE6AE62641A25A00E73788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2DEBB34A7F855FC0E75490F /* Pods-PresentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentationTests.release.xcconfig"; path = "Target Support Files/Pods-PresentationTests/Pods-PresentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		C2588D8CAC8CB73BDB052D63 /* Pods-AdidasChallenge-AdidasChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdidasChallenge-AdidasChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-AdidasChallenge-AdidasChallengeUITests/Pods-AdidasChallenge-AdidasChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -620,7 +626,8 @@
 		96279FF226449F8E00A3CA83 /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
-				96279FF326449F8E00A3CA83 /* DataTests.swift */,
+				9627A3BE2644B5DA00A3CA83 /* DataTests.swift */,
+				9627A25C2644AAF100A3CA83 /* Classes */,
 				96279FF526449F8E00A3CA83 /* Info.plist */,
 			);
 			path = DataTests;
@@ -638,7 +645,8 @@
 		9627A02C26449FB900A3CA83 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				9627A02D26449FB900A3CA83 /* PresentationTests.swift */,
+				9627A3DA2644B5F300A3CA83 /* PresentationTests.swift */,
+				9627A2C32644AF1400A3CA83 /* Classes */,
 				9627A02F26449FB900A3CA83 /* Info.plist */,
 			);
 			path = PresentationTests;
@@ -656,7 +664,7 @@
 		9627A05226449FC400A3CA83 /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
-				9627A05326449FC400A3CA83 /* DomainTests.swift */,
+				9627A3D02644B5EC00A3CA83 /* DomainTests.swift */,
 				9627A05526449FC400A3CA83 /* Info.plist */,
 			);
 			path = DomainTests;
@@ -669,15 +677,6 @@
 				9627A0932644A00E00A3CA83 /* Supporting Files */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		9627A07A26449FCA00A3CA83 /* DataTests */ = {
-			isa = PBXGroup;
-			children = (
-				9627A07B26449FCA00A3CA83 /* DataTests.swift */,
-				9627A07D26449FCA00A3CA83 /* Info.plist */,
-			);
-			path = DataTests;
 			sourceTree = "<group>";
 		};
 		9627A09126449FF000A3CA83 /* Supporting Files */ = {
@@ -746,6 +745,7 @@
 			children = (
 				960586042642BECE00080347 /* MapperAssembly.swift */,
 				960585FF2642BE9400080347 /* ServiceAssembly.swift */,
+				9627A2E82644B0D200A3CA83 /* DataAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -756,8 +756,24 @@
 				969197302641DC6C00F19088 /* SceneAssembly.swift */,
 				9691973A2641DD4900F19088 /* CoordinatorAssembly.swift */,
 				9627A20A2644A59600A3CA83 /* ViewModelMapperAssembly.swift */,
+				9627A2DE2644AFE900A3CA83 /* TargetAssembly.swift */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9627A25C2644AAF100A3CA83 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9627A2C32644AF1400A3CA83 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9627A2C42644AF3D00A3CA83 /* SceneAssemblyTest.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		96914C632643CF5300B8B8BE /* NavigationBar */ = {
@@ -812,6 +828,7 @@
 				969196A02641C01500F19088 /* ApplicationDependencies.swift */,
 				969196A52641C05C00F19088 /* AppAssembly.swift */,
 				969197352641DD1600F19088 /* SingletonAssembly.swift */,
+				9627A2F22644B10900A3CA83 /* TargetAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -1170,18 +1187,17 @@
 			isa = PBXGroup;
 			children = (
 				96CE6AC12641A25800E73788 /* AdidasChallenge */,
+				9627A01F26449FB900A3CA83 /* Presentation */,
+				9627A04526449FC300A3CA83 /* Domain */,
+				9627A06D26449FCA00A3CA83 /* Data */,
+				A9388F1EAA2552471A65BD22 /* Frameworks */,
 				96CE6AD82641A25A00E73788 /* AdidasChallengeTests */,
 				96CE6AE32641A25A00E73788 /* AdidasChallengeUITests */,
 				96279FF226449F8E00A3CA83 /* DataTests */,
-				9627A01F26449FB900A3CA83 /* Presentation */,
-				9627A02C26449FB900A3CA83 /* PresentationTests */,
-				9627A04526449FC300A3CA83 /* Domain */,
 				9627A05226449FC400A3CA83 /* DomainTests */,
-				9627A06D26449FCA00A3CA83 /* Data */,
-				9627A07A26449FCA00A3CA83 /* DataTests */,
-				96CE6AC02641A25800E73788 /* Products */,
+				9627A02C26449FB900A3CA83 /* PresentationTests */,
 				33A34A86BD837214E0345EF4 /* Pods */,
-				A9388F1EAA2552471A65BD22 /* Frameworks */,
+				96CE6AC02641A25800E73788 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1214,7 +1230,7 @@
 		96CE6AD82641A25A00E73788 /* AdidasChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				96CE6AD92641A25A00E73788 /* AdidasChallengeTests.swift */,
+				9627A3F62644B60900A3CA83 /* AdidasChallengeTests.swift */,
 				96CE6ADB2641A25A00E73788 /* Info.plist */,
 			);
 			path = AdidasChallengeTests;
@@ -1223,7 +1239,7 @@
 		96CE6AE32641A25A00E73788 /* AdidasChallengeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				96CE6AE42641A25A00E73788 /* AdidasChallengeUITests.swift */,
+				9627A3EC2644B60100A3CA83 /* AdidasChallengeUITests.swift */,
 				96CE6AE62641A25A00E73788 /* Info.plist */,
 			);
 			path = AdidasChallengeUITests;
@@ -1475,6 +1491,7 @@
 					};
 					9627A04B26449FC300A3CA83 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 96CE6ABE2641A25800E73788;
 					};
 					9627A06B26449FCA00A3CA83 = {
@@ -1482,6 +1499,7 @@
 					};
 					9627A07326449FCA00A3CA83 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 96CE6ABE2641A25800E73788;
 					};
 					96CE6ABE2641A25800E73788 = {
@@ -1489,10 +1507,12 @@
 					};
 					96CE6AD42641A25A00E73788 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 96CE6ABE2641A25800E73788;
 					};
 					96CE6ADF2641A25A00E73788 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 96CE6ABE2641A25800E73788;
 					};
 				};
@@ -1898,6 +1918,7 @@
 				9627A0F72644A2F100A3CA83 /* String+Extension.swift in Sources */,
 				9627A1412644A32A00A3CA83 /* ReviewFormPresenter.swift in Sources */,
 				9627A1602644A34300A3CA83 /* NavigationBarView.swift in Sources */,
+				9627A2DF2644AFE900A3CA83 /* TargetAssembly.swift in Sources */,
 				9627A0D82644A2E800A3CA83 /* UIColor+Helper.swift in Sources */,
 				9627A1082644A2F900A3CA83 /* ErrorView.swift in Sources */,
 				9627A1982644A36D00A3CA83 /* HomeViewController.swift in Sources */,
@@ -1912,7 +1933,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9627A02E26449FB900A3CA83 /* PresentationTests.swift in Sources */,
+				9627A2C52644AF3D00A3CA83 /* SceneAssemblyTest.swift in Sources */,
+				9627A3DB2644B5F300A3CA83 /* PresentationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1931,7 +1953,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9627A05426449FC400A3CA83 /* DomainTests.swift in Sources */,
+				9627A3D12644B5EC00A3CA83 /* DomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1940,6 +1962,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9627A1DD2644A39B00A3CA83 /* MapperAssembly.swift in Sources */,
+				9627A2E92644B0D200A3CA83 /* DataAssembly.swift in Sources */,
 				9627A1DF2644A39B00A3CA83 /* ReviewService.swift in Sources */,
 				9627A1DE2644A39B00A3CA83 /* ReviewMapper.swift in Sources */,
 				9627A1E02644A39B00A3CA83 /* ServiceAssembly.swift in Sources */,
@@ -1954,7 +1977,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9627A07C26449FCA00A3CA83 /* DataTests.swift in Sources */,
+				9627A3BF2644B5DA00A3CA83 /* DataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1964,6 +1987,7 @@
 			files = (
 				969197362641DD1600F19088 /* SingletonAssembly.swift in Sources */,
 				96CE6AC32641A25800E73788 /* AppDelegate.swift in Sources */,
+				9627A2F32644B10900A3CA83 /* TargetAssembly.swift in Sources */,
 				969196A62641C05C00F19088 /* AppAssembly.swift in Sources */,
 				969196A12641C01500F19088 /* ApplicationDependencies.swift in Sources */,
 			);
@@ -1973,7 +1997,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96CE6ADA2641A25A00E73788 /* AdidasChallengeTests.swift in Sources */,
+				9627A3F72644B60900A3CA83 /* AdidasChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1981,7 +2005,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96CE6AE52641A25A00E73788 /* AdidasChallengeUITests.swift in Sources */,
+				9627A3ED2644B60100A3CA83 /* AdidasChallengeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2232,6 +2256,7 @@
 			baseConfigurationReference = D5B7801B3EFD7BB3D71640C7 /* Pods-DomainTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB6DBFS672;
 				INFOPLIST_FILE = DomainTests/Info.plist;
@@ -2242,6 +2267,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adidas.DomainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdidasChallenge.app/AdidasChallenge";
@@ -2253,6 +2279,7 @@
 			baseConfigurationReference = 10F3CCE4155C47449530417D /* Pods-DomainTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB6DBFS672;
 				INFOPLIST_FILE = DomainTests/Info.plist;
@@ -2330,6 +2357,7 @@
 			baseConfigurationReference = 04B5CFF8C75A3401A664A3C0 /* Pods-DataTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB6DBFS672;
 				INFOPLIST_FILE = DataTests/Info.plist;
@@ -2340,6 +2368,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adidas.DataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdidasChallenge.app/AdidasChallenge";
@@ -2351,6 +2380,7 @@
 			baseConfigurationReference = DBBA9F2D3882654FC8A14C4E /* Pods-DataTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB6DBFS672;
 				INFOPLIST_FILE = DataTests/Info.plist;
@@ -2535,6 +2565,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB6DBFS672;
 				INFOPLIST_FILE = AdidasChallengeTests/Info.plist;
@@ -2546,6 +2577,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adidas.AdidasChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdidasChallenge.app/AdidasChallenge";
@@ -2558,6 +2590,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB6DBFS672;
 				INFOPLIST_FILE = AdidasChallengeTests/Info.plist;
@@ -2580,6 +2613,7 @@
 			baseConfigurationReference = 06BBEDE701E825A8A0BB31C2 /* Pods-AdidasChallenge-AdidasChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB6DBFS672;
 				INFOPLIST_FILE = AdidasChallengeUITests/Info.plist;
@@ -2590,6 +2624,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adidas.AdidasChallengeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = AdidasChallenge;
@@ -2601,6 +2636,7 @@
 			baseConfigurationReference = C2588D8CAC8CB73BDB052D63 /* Pods-AdidasChallenge-AdidasChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB6DBFS672;
 				INFOPLIST_FILE = AdidasChallengeUITests/Info.plist;

@@ -9,7 +9,6 @@ import Foundation
 import Swinject
 import SwinjectAutoregistration
 
-// swiftlint:disable force_cast force_unwrapping
 final class SingletonAssembly: Assembly {
     
     // MARK: Internal methods

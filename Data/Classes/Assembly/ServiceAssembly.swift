@@ -10,7 +10,6 @@ import Swinject
 import SwinjectAutoregistration
 import Domain
 
-// swiftlint:disable force_cast force_unwrapping
 public final class ServiceAssembly: Assembly {
     
     public init() { }
