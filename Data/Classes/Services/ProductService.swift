@@ -29,17 +29,7 @@ final class ProductService: ProductWorker {
             completion(.success(filteredProducts))
             return
         }
-//        
-//        cache = [
-//            Product(id: "1", name: "Shoe", description: "Big shoe", currency: "$", price: "1", image: nil),
-//            Product(id: "2", name: "Basketball", description: "Ball", currency: "$", price: "500", image: nil),
-//            Product(id: "3", name: "Adidas Phone case", description: "phone case", currency: "$", price: "20", image: nil)
-//        ]
-//        
-//        guard let products = self.cache else { return }
-//        let filteredProducts = self.filterProducts(searchTerm: searchTerm, products: products)
-//        completion(.success(filteredProducts))
-//        
+        
         AF.request(productsBaseApiUrl).responseJSON(completionHandler: { [weak self] response in
             
             switch response.result {
